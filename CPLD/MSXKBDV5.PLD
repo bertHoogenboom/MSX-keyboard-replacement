@@ -1,0 +1,203 @@
+Name     Name MSXKBD;
+PartNo   02 ;
+Date     10/09/2021 ;
+Revision 01 ;
+Designer Engineer ;
+Company  bhb Electronics ;
+Assembly None ;
+Location  Sony F700 MSX;
+Device   f1508isptqfp100 ;
+
+PROPERTY ATMEL {Preassign = KEEP};
+
+/* *************** INPUT PINS *********************/
+PIN  89 = RESET;
+PIN  28 = X0 ;
+PIN  29 = X1 ;
+PIN  30 = X2 ;
+PIN  31 = X3 ;
+PIN  42 = X4 ; 
+PIN  44 = X5 ; 
+PIN  45 = X6 ; 
+PIN  46 = X7 ; 
+ 
+PIN  36 = X_adr0 ;
+PIN  37 = X_adr1 ;
+PIN  40 = X_adr2 ;
+PIN  41 = X_adr3 ;
+PIN  47 = XADRCLK ;
+
+PIN  49 = YADRCLK ;  
+PIN  50 = YADRCLK1 ;
+/*
+PIN  55 = Y_adr0;
+PIN  56 = Y_adr1;
+PIN  63 = Y_adr2;
+PIN  64 = Y_adr3;
+PIN  77 = Y_adr4;
+PIN  78 = Y_adr5;
+PIN  32 = Y_adr6;
+PIN  94 = Y_adr7;
+PIN  96 = Y_adr8;
+PIN   6 = Y_adr9;
+PIN   7 = Y_adrA;
+PIN  19 = Y_adrB;
+PIN  20 = Y_adrC;
+*/
+/* ******* BIDIRECTIONAL PINS or OUTPUT PINS *******/
+
+/* D7 to D0 is connected to databus */
+
+PIN  61 = D0 ;
+PIN  48 = D1 ;
+PIN  27 = D2 ;
+PIN  16 = D3 ;
+PIN  85 = D4 ; 
+PIN  72 = D5 ; 
+PIN  13 = D6 ; 
+PIN  92 = D7 ; 
+
+/* *************** OUTPUT PINS *********************/
+/*
+PIN  99 = T1;
+PIN 100 = T2;
+PIN   1 = T3;
+PIN   2 = T4;
+PIN  21 = T5;
+PIN  22 = T6;
+PIN  23 = T7;
+PIN  24 = T8;
+PIN  71 = T9;
+PIN  70 = T10;
+PIN  69 = T11;
+PIN  68 = T12;
+PIN  60 = T13;
+PIN  58 = T14;
+PIN  57 = T15;
+PIN  54 = T16;
+*/
+/* *************** NODES ****************************/
+
+NODE [ROWA7..ROWA0];
+NODE [ROWB7..ROWB0];
+NODE [ROWC7..ROWC0];
+NODE [ROWD7..ROWD0];
+NODE [ROWE7..ROWE0];
+NODE [ROWF7..ROWF0];
+NODE [ROWG7..ROWG0];
+NODE [ROWH7..ROWH0];
+NODE [ROWI7..ROWI0];
+NODE [ROWJ7..ROWJ0];
+NODE [ROWK7..ROWK0];
+NODE [ROWL7..ROWL0];
+NODE [ROWM7..ROWM0];
+NODE [Y_adr3..Y_adr0];
+
+/*****************IMPLENTATION**********************/
+ch0 = YADRCLK;
+ch1 = YADRCLK1 ; 
+//ch2 = D2;
+//ch3 = D3;
+//ch4 = D4;
+//ch5 = D5;
+//ch6 = D6;
+//ch7 = D7;
+
+[Y_adr3..Y_adr0].D = [D4..D7];
+[Y_adr3..Y_adr0].CK = YADRCLK1;
+
+
+[ROWA7..ROWA0].D = [X7..0];
+[ROWB7..ROWB0].D = [X7..0];
+[ROWC7..ROWC0].D = [X7..0];
+[ROWD7..ROWD0].D = [X7..0];
+[ROWE7..ROWE0].D = [X7..0];
+[ROWF7..ROWF0].D = [X7..0];
+[ROWG7..ROWG0].D = [X7..0];
+[ROWH7..ROWH0].D = [X7..0];
+[ROWI7..ROWI0].D = [X7..0];
+[ROWJ7..ROWJ0].D = [X7..0];
+[ROWK7..ROWK0].D = [X7..0];
+[ROWL7..ROWL0].D = [X7..0];
+[ROWM7..ROWM0].D = [X7..0];
+
+[ROWA7..ROWA0].CK =(!X_adr3 & !X_adr2 & !X_adr1 & !X_adr0 & XADRCLK);
+[ROWB7..ROWB0].CK =(!X_adr3 & !X_adr2 & !X_adr1 & X_adr0 & XADRCLK);
+[ROWC7..ROWC0].CK =(!X_adr3 & !X_adr2 & X_adr1 & !X_adr0 & XADRCLK);
+[ROWD7..ROWD0].CK =(!X_adr3 & !X_adr2 & X_adr1 & X_adr0) & XADRCLK;
+[ROWE7..ROWE0].CK =(!X_adr3 & X_adr2 & !X_adr1 & !X_adr0 & XADRCLK);
+[ROWF7..ROWF0].CK =(!X_adr3 & X_adr2 & !X_adr1 & X_adr0 & XADRCLK);
+[ROWG7..ROWG0].CK =(!X_adr3 & X_adr2 & X_adr1 & !X_adr0 & XADRCLK);
+[ROWH7..ROWH0].CK =(!X_adr3 & X_adr2 & X_adr1 & X_adr0 & XADRCLK);
+[ROWI7..ROWI0].CK =(X_adr3 & !X_adr2 & !X_adr1 & !X_adr0 & XADRCLK);
+[ROWJ7..ROWJ0].CK =(X_adr3 & !X_adr2 & !X_adr1 & X_adr0 & XADRCLK);
+[ROWK7..ROWK0].CK =(X_adr3 & !X_adr2 & X_adr1 & !X_adr0 & XADRCLK);
+[ROWL7..ROWL0].CK =(X_adr3 & !X_adr2 & X_adr1 & X_adr0 & XADRCLK);
+[ROWM7..ROWM0].CK =(X_adr3 & X_adr2 & !X_adr1 & !X_adr0 & XADRCLK);
+
+[ROWA7..ROWA0].AP = !RESET;
+[ROWB7..ROWB0].AP = !RESET;
+[ROWC7..ROWC0].AP = !RESET;
+[ROWD7..ROWD0].AP = !RESET;
+[ROWE7..ROWE0].AP = !RESET;
+[ROWF7..ROWF0].AP = !RESET;
+[ROWG7..ROWG0].AP = !RESET;
+[ROWH7..ROWH0].AP = !RESET;
+[ROWI7..ROWI0].AP = !RESET;
+[ROWJ7..ROWJ0].AP = !RESET;
+[ROWK7..ROWK0].AP = !RESET;
+[ROWL7..ROWL0].AP = !RESET;
+[ROWM7..ROWM0].AP = !RESET;
+
+//[AO7..AO0] = 'b'11111111 & (!Y_adr3 & !Y_adr2 & !Y_adr1 & !Y_adr0);
+[AO7..AO0] = [ROWA7..ROWA0] & (!Y_adr3 & !Y_adr2 & !Y_adr1 & !Y_adr0);
+
+//[BO7..BO0] = 'b'11111111 & (!Y_adr3 & !Y_adr2 & !Y_adr1 & Y_adr0);
+[BO7..BO0] = [ROWB7..ROWB0] & (!Y_adr3 & !Y_adr2 & !Y_adr1 & Y_adr0);
+
+//[CO7..CO0] = 'b'11111111 & (!Y_adr3 & !Y_adr2 & Y_adr1 & !Y_adr0);
+[CO7..CO0] = [ROWC7..ROWC0] & (!Y_adr3 & !Y_adr2 & Y_adr1 & !Y_adr0);
+
+//[DO7..DO0] = 'b'11111111 & (!Y_adr3 & !Y_adr2 & Y_adr1 & Y_adr0);
+[DO7..DO0] = [ROWD7..ROWD0] & (!Y_adr3 & !Y_adr2 & Y_adr1 & Y_adr0);
+
+//[EO7..EO0] = 'b'11111111 & (!Y_adr3 & Y_adr2 & !Y_adr1 & !Y_adr0);
+[EO7..EO0] = [ROWE7..ROWE0] & (!Y_adr3 & Y_adr2 & !Y_adr1 & !Y_adr0);
+
+//[FO7..FO0] = 'b'11111111 & (!Y_adr3 & Y_adr2 & !Y_adr1 & Y_adr0);
+[FO7..FO0] = [ROWF7..ROWF0] & (!Y_adr3 & Y_adr2 & !Y_adr1 & Y_adr0);
+
+//[GO7..GO0] = 'b'11111111 & (!Y_adr3 & Y_adr2 & Y_adr1 & !Y_adr0);
+[GO7..GO0] = [ROWG7..ROWG0] & (!Y_adr3 & Y_adr2 & Y_adr1 & !Y_adr0);
+
+//[HO7..HO0] = 'b'11111111 & (!Y_adr3 & Y_adr2 & Y_adr1 & Y_adr0);
+[HO7..HO0] = [ROWH7..ROWH0] & (!Y_adr3 & Y_adr2 & Y_adr1 & Y_adr0);
+
+//[IO7..IO0] = 'b'11111111 & (Y_adr3 & !Y_adr2 & !Y_adr1 & !Y_adr0);
+[IO7..IO0] = [ROWI7..ROWI0] & (Y_adr3 & !Y_adr2 & !Y_adr1 & !Y_adr0);
+
+//[JO7..JO0] = 'b'11111111 & (Y_adr3 & !Y_adr2 & !Y_adr1 & Y_adr0);
+[JO7..JO0] = [ROWJ7..ROWJ0] & (Y_adr3 & !Y_adr2 & !Y_adr1 & Y_adr0);
+
+//[KO7..KO0] = 'b'11111111 & (Y_adr3 & !Y_adr2 & Y_adr1 & !Y_adr0);
+[KO7..KO0] = [ROWK7..ROWK0] & (Y_adr3 & !Y_adr2 & Y_adr1 & !Y_adr0);
+
+//[LO7..LO0] = 'b'11111111 & (Y_adr3 & !Y_adr2 & Y_adr1 & Y_adr0);
+[LO7..LO0] = [ROWL7..ROWL0] & (Y_adr3 & !Y_adr2 & Y_adr1 & Y_adr0);
+
+//[MO7..MO0] = 'b'11111111 & (Y_adr3 & Y_adr2 & !Y_adr1 & !Y_adr0);
+[MO7..MO0] = [ROWM7..ROWM0] & (Y_adr3 & Y_adr2 & !Y_adr1 & !Y_adr0);
+
+[D7..D0].L = [AO7..AO0] # [BO7..BO0] # [CO7..CO0] # [DO7..DO0] # [EO7..EO0] # [FO7..FO0] # [GO7..GO0] # [HO7..HO0] # [IO7..IO0] # [JO7..JO0] # [KO7..KO0] # [LO7..LO0] # [MO7..MO0] # ('b'11111111 & (Y_adr3 & Y_adr2 & !Y_adr1 & Y_adr0));
+
+
+
+//[D7..D0].L = 'b'11111111;
+
+[D7..D0].LE = YADRCLK;
+[D7..D0].OE = YADRCLK;
+
+
+
+
+

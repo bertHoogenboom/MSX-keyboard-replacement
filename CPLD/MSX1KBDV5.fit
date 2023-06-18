@@ -1,0 +1,1675 @@
+Atmel ATF1508AS Fitter Version 1.8.7.8 ,running Tue Mar 15 12:47:00 2022
+
+
+fit1508 C:\USERS\BERT_\DOCUMENTS\03_MSX\MSX_KEYBOARD_INBOUW\MSX_KEYBOARD_V5\CPLD\MSX1KBDV5.tt2 -CUPL -dev P1508T100 -JTAG ON
+
+
+****** Initial fitting strategy and property ******
+ Pla_in_file = MSX1KBDV5.tt2
+ Pla_out_file = MSX1KBDV5.tt3
+ Jedec_file = MSX1KBDV5.jed
+ Vector_file = MSX1KBDV5.tmv
+ verilog_file = MSX1KBDV5.vt
+ Time_file = 
+ Log_file = MSX1KBDV5.fit
+ err_file = 
+ Device_name = TQFP100
+ Module_name = 
+ Package_type = TQFP
+ Preassign_file = 
+ Property_file = 
+ Sleep_mode = 
+ Preassignment = 
+ Security_mode = OFF
+ Pin_keep_mode = ON
+ Dedicated_input_clock = 
+ Dedicated_input_reset = 
+ Dedicated_input_oe = 
+ supporter = CUPL
+ optimize = ON
+ Soft_buffer = 
+ Xor_synthesis = OFF
+ Foldback_logic =  on
+ Expander = 
+ Cascade_logic = OFF
+ Dedicated_input = 
+ Output_fast = OFF
+ *******************************
+ Power down pin 1 = OFF
+ Power down pin 2 = OFF
+ power_reset = OFF
+ JTAG = ON
+ TDI pullup = OFF
+ TMS pullup = OFF
+ MC_power = OFF
+ Open_collector = OFF
+ ITD0 = ON
+ ITD1 = ON
+ ITD2 = ON
+ Fast_inlatch = off
+ *******************************
+---------------------------------------------------------
+ Fitter_Pass 1, Preassign = KEEP, LOGIC_DOUBLING : OFF 
+ ... 
+## ERROR : Bad user pin assignement : 108
+ ## ERROR : Bad user pin assignement 
+---------------------------------------------------------
+ Fitter_Pass 2, Preassign = KEEP, NODE ASSIGN : OFF 
+ ... 
+Info: C:\USERS\BERT_\DOCUMENTS\03_MSX\MSX_KEYBOARD_INBOUW\MSX_KEYBOARD_V5\CPLD\MSX1KBDV5 uses 90% of the logic resources in device TQFP100
+  If you wish to have more pins available for future logic change
+  Atmel recommends using a larger device.
+
+Performing global Output Enable pin assignments ...
+
+Performing global pin assignments ...
+--------------------------------------
+
+
+
+Final global control pins assignment (if applicable)...
+-------------------------------------------------------
+
+
+
+Performing input pin pre-assignments ...
+------------------------------------
+RESET assigned to pin  89
+
+Attempt to place floating signals ...
+------------------------------------
+ROWM0 is placed at feedback node 601 (MC 1)
+ROWG0 is placed at feedback node 602 (MC 2)
+ROWK0 is placed at feedback node 603 (MC 3)
+ROWE0 is placed at feedback node 604 (MC 4)
+ROWL0 is placed at feedback node 605 (MC 5)
+ROWJ0 is placed at feedback node 606 (MC 6)
+ROWF0 is placed at feedback node 607 (MC 7)
+ROWH0 is placed at feedback node 608 (MC 8)
+ROWI0 is placed at feedback node 609 (MC 9)
+ROWD0 is placed at feedback node 610 (MC 10)
+Y_adr8 is placed at pin 96 (MC 11)
+ROWC0 is placed at feedback node 611 (MC 11)
+ROWB0 is placed at feedback node 612 (MC 12)
+Y_adr7 is placed at pin 94 (MC 13)
+ROWA0 is placed at feedback node 613 (MC 13)
+D7 is placed at pin 92 (MC 16)
+D6 is placed at pin 13 (MC 19)
+ROWI1 is placed at feedback node 620 (MC 20)
+ROWM1 is placed at feedback node 621 (MC 21)
+ROWK1 is placed at feedback node 622 (MC 22)
+ROWG1 is placed at feedback node 623 (MC 23)
+ROWL1 is placed at feedback node 624 (MC 24)
+ROWJ1 is placed at feedback node 625 (MC 25)
+ROWE1 is placed at feedback node 626 (MC 26)
+Y_adrA is placed at pin 7 (MC 27)
+ROWF1 is placed at feedback node 627 (MC 27)
+ROWD1 is placed at feedback node 628 (MC 28)
+Y_adr9 is placed at pin 6 (MC 29)
+ROWC1 is placed at feedback node 629 (MC 29)
+ROWH1 is placed at feedback node 630 (MC 30)
+ROWB1 is placed at feedback node 631 (MC 31)
+TDI is placed at pin 4 (MC 32)
+ROWA1 is placed at feedback node 632 (MC 32)
+ROWM2 is placed at feedback node 633 (MC 33)
+ROWI2 is placed at feedback node 634 (MC 34)
+ROWK2 is placed at feedback node 635 (MC 35)
+ROWG2 is placed at feedback node 636 (MC 36)
+ROWL2 is placed at feedback node 637 (MC 37)
+ROWJ2 is placed at feedback node 638 (MC 38)
+ROWE2 is placed at feedback node 639 (MC 39)
+ROWH2 is placed at feedback node 640 (MC 40)
+Y_adrC is placed at pin 20 (MC 41)
+ROWF2 is placed at feedback node 641 (MC 41)
+ROWD2 is placed at feedback node 642 (MC 42)
+Y_adrB is placed at pin 19 (MC 43)
+ROWC2 is placed at feedback node 643 (MC 43)
+D3 is placed at pin 16 (MC 46)
+ROWB2 is placed at feedback node 647 (MC 47)
+TMS is placed at pin 15 (MC 48)
+ROWA2 is placed at feedback node 648 (MC 48)
+X_adr1 is placed at pin 37 (MC 49)
+ROWL4 is placed at feedback node 649 (MC 49)
+ROWJ4 is placed at feedback node 650 (MC 50)
+X_adr0 is placed at pin 36 (MC 51)
+ROWH4 is placed at feedback node 651 (MC 51)
+ROWI4 is placed at feedback node 652 (MC 52)
+ROWM4 is placed at feedback node 653 (MC 53)
+ROWK4 is placed at feedback node 654 (MC 54)
+ROWG4 is placed at feedback node 655 (MC 55)
+Y_adr6 is placed at pin 32 (MC 56)
+ROWE4 is placed at feedback node 656 (MC 56)
+X3 is placed at pin 31 (MC 57)
+ROWF4 is placed at feedback node 657 (MC 57)
+ROWD4 is placed at feedback node 658 (MC 58)
+X2 is placed at pin 30 (MC 59)
+ROWC4 is placed at feedback node 659 (MC 59)
+ROWB4 is placed at feedback node 660 (MC 60)
+X1 is placed at pin 29 (MC 61)
+ROWA4 is placed at feedback node 661 (MC 61)
+X0 is placed at pin 28 (MC 62)
+D2 is placed at pin 27 (MC 64)
+X_adr2 is placed at pin 40 (MC 65)
+ROWL3 is placed at feedback node 665 (MC 65)
+ROWJ3 is placed at feedback node 666 (MC 66)
+X_adr3 is placed at pin 41 (MC 67)
+ROWH3 is placed at feedback node 667 (MC 67)
+ROWI3 is placed at feedback node 668 (MC 68)
+X4 is placed at pin 42 (MC 69)
+ROWG3 is placed at feedback node 669 (MC 69)
+X5 is placed at pin 44 (MC 70)
+ROWE3 is placed at feedback node 670 (MC 70)
+ROWF3 is placed at feedback node 671 (MC 71)
+X6 is placed at pin 45 (MC 72)
+ROWD3 is placed at feedback node 672 (MC 72)
+X7 is placed at pin 46 (MC 73)
+ROWC3 is placed at feedback node 673 (MC 73)
+ROWB3 is placed at feedback node 674 (MC 74)
+XADRCLK is placed at pin 47 (MC 75)
+D1 is placed at pin 48 (MC 77)
+ROWM3 is placed at feedback node 678 (MC 78)
+ROWA3 is placed at feedback node 679 (MC 79)
+ROWK3 is placed at feedback node 680 (MC 80)
+ROWM5 is placed at feedback node 681 (MC 81)
+ROWI5 is placed at feedback node 682 (MC 82)
+ROWK5 is placed at feedback node 683 (MC 83)
+ROWG5 is placed at feedback node 684 (MC 84)
+ROWL5 is placed at feedback node 685 (MC 85)
+Y_adr0 is placed at pin 55 (MC 86)
+ROWE5 is placed at feedback node 686 (MC 86)
+ROWF5 is placed at feedback node 687 (MC 87)
+Y_adr1 is placed at pin 56 (MC 88)
+ROWD5 is placed at feedback node 688 (MC 88)
+ROWJ5 is placed at feedback node 689 (MC 89)
+ROWC5 is placed at feedback node 690 (MC 90)
+ROWH5 is placed at feedback node 691 (MC 91)
+D0 is placed at pin 61 (MC 94)
+ROWB5 is placed at feedback node 695 (MC 95)
+TCK is placed at pin 62 (MC 96)
+ROWA5 is placed at feedback node 696 (MC 96)
+Y_adr2 is placed at pin 63 (MC 97)
+ROWI6 is placed at feedback node 697 (MC 97)
+ROWG6 is placed at feedback node 698 (MC 98)
+Y_adr3 is placed at pin 64 (MC 99)
+ROWE6 is placed at feedback node 699 (MC 99)
+ROWF6 is placed at feedback node 700 (MC 100)
+ROWM6 is placed at feedback node 701 (MC 101)
+ROWK6 is placed at feedback node 702 (MC 102)
+ROWD6 is placed at feedback node 703 (MC 103)
+ROWL6 is placed at feedback node 704 (MC 104)
+ROWJ6 is placed at feedback node 705 (MC 105)
+ROWC6 is placed at feedback node 706 (MC 106)
+ROWH6 is placed at feedback node 707 (MC 107)
+D5 is placed at pin 72 (MC 110)
+ROWB6 is placed at feedback node 711 (MC 111)
+TDO is placed at pin 73 (MC 112)
+ROWA6 is placed at feedback node 712 (MC 112)
+ROWM7 is placed at feedback node 713 (MC 113)
+ROWG7 is placed at feedback node 714 (MC 114)
+ROWK7 is placed at feedback node 715 (MC 115)
+ROWE7 is placed at feedback node 716 (MC 116)
+Y_adr4 is placed at pin 77 (MC 117)
+ROWF7 is placed at feedback node 717 (MC 117)
+Y_adr5 is placed at pin 78 (MC 118)
+ROWD7 is placed at feedback node 718 (MC 118)
+ROWC7 is placed at feedback node 719 (MC 119)
+ROWL7 is placed at feedback node 720 (MC 120)
+ROWJ7 is placed at feedback node 721 (MC 121)
+ROWB7 is placed at feedback node 722 (MC 122)
+ROWH7 is placed at feedback node 723 (MC 123)
+ROWA7 is placed at feedback node 724 (MC 124)
+ROWI7 is placed at feedback node 725 (MC 125)
+D4 is placed at pin 85 (MC 128)
+
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                            Y   Y                               Y Y                          
+                            _   _         R                     _ _                          
+                            a   a         E                     a a                          
+                            d G d     V   S     G       V       d d                          
+                            r N r   D C   E     N D     C       r r                          
+                            8 D 7   7 C   T     D 4     C       5 4                          
+                  ------------------------------------------------------                     
+                 / 100  98  96  94  92  90  88  86  84  82  80  78  76  \                   
+                /     99  97  95  93  91  89  87  85  83  81  79  77     \                  
+               | 1                                                     75 |                  
+               | 2                                                     74 | GND              
+           VCC | 3                                                     73 | TDO              
+           TDI | 4                                                     72 | D5               
+               | 5                                                     71 |                  
+        Y_adr9 | 6                                                     70 |                  
+        Y_adrA | 7                                                     69 |                  
+               | 8                                                     68 |                  
+               | 9                                                     67 |                  
+               | 10                                                    66 | VCC              
+           GND | 11                                                    65 |                  
+               | 12                     ATF1508                        64 | Y_adr3           
+            D6 | 13                  100-Lead TQFP                     63 | Y_adr2           
+               | 14                                                    62 | TCK              
+           TMS | 15                                                    61 | D0               
+            D3 | 16                                                    60 |                  
+               | 17                                                    59 | GND              
+           VCC | 18                                                    58 |                  
+        Y_adrB | 19                                                    57 |                  
+        Y_adrC | 20                                                    56 | Y_adr1           
+               | 21                                                    55 | Y_adr0           
+               | 22                                                    54 |                  
+               | 23                                                    53 |                  
+               | 24                                                    52 |                  
+               | 25                                                    51 | VCC              
+                \     27  29  31  33  35  37  39  41  43  45   47  49    /                  
+                 \  26  28  30  32  34  36  38  40  42  44  46  48   50 /                   
+                  ------------------------------------------------------                     
+                    G D X X X X Y   V   X X G V X X X G X X X X D                            
+                    N 2 0 1 2 3 _   C   _ _ N C _ _ 4 N 5 6 7 A 1                            
+                    D           a   C   a a D C a a   D       D                              
+                                d       d d     d d           R                              
+                                r       r r     r r           C                              
+                                6       0 1     2 3           L                              
+                                                              K                              
+
+
+
+VCC = Supply Voltage pin which must be connected to (5.0V or 3.0V)
+
+GND = GND pin which must be connected to ground
+
+TMS,TDI,TDO,TDI = JTAG pins which must reserved for the JTAG interface
+
+NC = Unused I/O pins which must be unconnected on the board
+
+Universal-Interconnect-Multiplexer assignments
+------------------------------------------------
+FanIn assignment for block A [33]
+{
+ROWF7,ROWK7,ROWM7,ROWJ7,ROWB7,ROWG7,RESET,ROWA7,ROWD7,ROWH7,ROWL7,ROWE7,ROWC7,ROWI7,
+X_adr1,X_adr0,X0,X_adr3,XADRCLK,X_adr2,
+Y_adr7,Y_adr0,Y_adrA,Y_adr1,Y_adr8,Y_adr2,Y_adr5,Y_adr4,Y_adrB,Y_adr3,Y_adrC,Y_adr9,Y_adr6,
+}
+Multiplexer assignment for block A
+Y_adr7			(MC20	P)   : MUX 0		Ref (A13p)
+Y_adr0			(MC26	P)   : MUX 1		Ref (F86p)
+Y_adrA			(MC23	P)   : MUX 2		Ref (B27p)
+Y_adr1			(MC14	P)   : MUX 3		Ref (F88p)
+ROWF7			(MC5	FB)  : MUX 4		Ref (H117fb)
+X_adr1			(MC29	P)   : MUX 5		Ref (D49p)
+Y_adr8			(MC21	P)   : MUX 6		Ref (A11p)
+Y_adr2			(MC15	P)   : MUX 7		Ref (G97p)
+ROWK7			(MC3	FB)  : MUX 8		Ref (H115fb)
+X_adr0			(MC28	P)   : MUX 9		Ref (D51p)
+ROWM7			(MC1	FB)  : MUX 10		Ref (H113fb)
+Y_adr5			(MC18	P)   : MUX 11		Ref (H118p)
+Y_adr4			(MC17	P)   : MUX 13		Ref (H117p)
+X0			(MC33	P)   : MUX 14		Ref (D62p)
+X_adr3			(MC31	P)   : MUX 15		Ref (E67p)
+ROWJ7			(MC9	FB)  : MUX 17		Ref (H121fb)
+Y_adrB			(MC24	P)   : MUX 18		Ref (C43p)
+Y_adr3			(MC16	P)   : MUX 19		Ref (G99p)
+Y_adrC			(MC25	P)   : MUX 20		Ref (C41p)
+ROWB7			(MC10	FB)  : MUX 21		Ref (H122fb)
+ROWG7			(MC2	FB)  : MUX 22		Ref (H114fb)
+RESET			(MC32	FB)  : MUX 24		Ref (GCLR)
+ROWA7			(MC12	FB)  : MUX 25		Ref (H124fb)
+ROWD7			(MC6	FB)  : MUX 26		Ref (H118fb)
+ROWH7			(MC11	FB)  : MUX 27		Ref (H123fb)
+XADRCLK			(MC27	P)   : MUX 28		Ref (E75p)
+ROWL7			(MC8	FB)  : MUX 30		Ref (H120fb)
+X_adr2			(MC30	P)   : MUX 31		Ref (E65p)
+Y_adr9			(MC22	P)   : MUX 32		Ref (B29p)
+Y_adr6			(MC19	P)   : MUX 35		Ref (D56p)
+ROWE7			(MC4	FB)  : MUX 36		Ref (H116fb)
+ROWC7			(MC7	FB)  : MUX 38		Ref (H119fb)
+ROWI7			(MC13	FB)  : MUX 39		Ref (H125fb)
+
+FanIn assignment for block B [33]
+{
+ROWK6,ROWJ6,ROWM6,ROWL6,ROWH6,ROWE6,ROWC6,ROWD6,ROWG6,ROWI6,ROWB6,RESET,ROWA6,ROWF6,
+X_adr3,X_adr1,X1,XADRCLK,X_adr0,X_adr2,
+Y_adr7,Y_adr3,Y_adrA,Y_adr1,Y_adr8,Y_adr5,Y_adr2,Y_adrB,Y_adr0,Y_adr4,Y_adr9,Y_adrC,Y_adr6,
+}
+Multiplexer assignment for block B
+Y_adr7			(MC20	P)   : MUX 0		Ref (A13p)
+Y_adr3			(MC16	P)   : MUX 1		Ref (G99p)
+Y_adrA			(MC23	P)   : MUX 2		Ref (B27p)
+Y_adr1			(MC14	P)   : MUX 3		Ref (F88p)
+ROWK6			(MC6	FB)  : MUX 4		Ref (G102fb)
+ROWJ6			(MC9	FB)  : MUX 5		Ref (G105fb)
+Y_adr8			(MC21	P)   : MUX 6		Ref (A11p)
+Y_adr5			(MC18	P)   : MUX 7		Ref (H118p)
+Y_adr2			(MC15	P)   : MUX 9		Ref (G97p)
+Y_adrB			(MC24	P)   : MUX 10		Ref (C43p)
+Y_adr0			(MC26	P)   : MUX 11		Ref (F86p)
+ROWM6			(MC5	FB)  : MUX 12		Ref (G101fb)
+Y_adr4			(MC17	P)   : MUX 13		Ref (H117p)
+Y_adr9			(MC22	P)   : MUX 14		Ref (B29p)
+X_adr3			(MC31	P)   : MUX 15		Ref (E67p)
+ROWL6			(MC8	FB)  : MUX 16		Ref (G104fb)
+ROWH6			(MC11	FB)  : MUX 17		Ref (G107fb)
+ROWE6			(MC3	FB)  : MUX 18		Ref (G99fb)
+ROWC6			(MC10	FB)  : MUX 19		Ref (G106fb)
+Y_adrC			(MC25	P)   : MUX 20		Ref (C41p)
+Y_adr6			(MC19	P)   : MUX 21		Ref (D56p)
+ROWD6			(MC7	FB)  : MUX 22		Ref (G103fb)
+X_adr1			(MC29	P)   : MUX 23		Ref (D49p)
+X1			(MC33	P)   : MUX 26		Ref (D61p)
+XADRCLK			(MC27	P)   : MUX 28		Ref (E75p)
+ROWG6			(MC2	FB)  : MUX 30		Ref (G98fb)
+X_adr0			(MC28	P)   : MUX 31		Ref (D51p)
+ROWI6			(MC1	FB)  : MUX 32		Ref (G97fb)
+ROWB6			(MC12	FB)  : MUX 35		Ref (G111fb)
+RESET			(MC32	FB)  : MUX 36		Ref (GCLR)
+ROWA6			(MC13	FB)  : MUX 37		Ref (G112fb)
+ROWF6			(MC4	FB)  : MUX 38		Ref (G100fb)
+X_adr2			(MC30	P)   : MUX 39		Ref (E65p)
+
+FanIn assignment for block C [33]
+{
+ROWJ3,ROWL3,RESET,ROWA3,ROWF3,ROWH3,ROWD3,ROWK3,ROWI3,ROWG3,ROWM3,ROWE3,ROWC3,ROWB3,
+X_adr1,X_adr2,X_adr0,X2,X_adr3,XADRCLK,
+Y_adr7,Y_adr3,Y_adrA,Y_adr1,Y_adr8,Y_adrB,Y_adr4,Y_adr0,Y_adr6,Y_adr5,Y_adr2,Y_adr9,Y_adrC,
+}
+Multiplexer assignment for block C
+Y_adr7			(MC20	P)   : MUX 0		Ref (A13p)
+Y_adr3			(MC16	P)   : MUX 1		Ref (G99p)
+Y_adrA			(MC23	P)   : MUX 2		Ref (B27p)
+Y_adr1			(MC14	P)   : MUX 3		Ref (F88p)
+ROWJ3			(MC2	FB)  : MUX 4		Ref (E66fb)
+X_adr1			(MC29	P)   : MUX 5		Ref (D49p)
+Y_adr8			(MC21	P)   : MUX 6		Ref (A11p)
+X_adr2			(MC30	P)   : MUX 7		Ref (E65p)
+ROWL3			(MC1	FB)  : MUX 8		Ref (E65fb)
+X_adr0			(MC28	P)   : MUX 9		Ref (D51p)
+Y_adrB			(MC24	P)   : MUX 10		Ref (C43p)
+X2			(MC33	P)   : MUX 12		Ref (D59p)
+Y_adr4			(MC17	P)   : MUX 13		Ref (H117p)
+RESET			(MC32	FB)  : MUX 14		Ref (GCLR)
+X_adr3			(MC31	P)   : MUX 15		Ref (E67p)
+ROWA3			(MC12	FB)  : MUX 17		Ref (E79fb)
+ROWF3			(MC7	FB)  : MUX 18		Ref (E71fb)
+Y_adr0			(MC26	P)   : MUX 19		Ref (F86p)
+ROWH3			(MC3	FB)  : MUX 20		Ref (E67fb)
+Y_adr6			(MC19	P)   : MUX 21		Ref (D56p)
+ROWD3			(MC8	FB)  : MUX 22		Ref (E72fb)
+ROWK3			(MC13	FB)  : MUX 23		Ref (E80fb)
+ROWI3			(MC4	FB)  : MUX 24		Ref (E68fb)
+Y_adr5			(MC18	P)   : MUX 25		Ref (H118p)
+ROWG3			(MC5	FB)  : MUX 26		Ref (E69fb)
+Y_adr2			(MC15	P)   : MUX 27		Ref (G97p)
+XADRCLK			(MC27	P)   : MUX 28		Ref (E75p)
+Y_adr9			(MC22	P)   : MUX 32		Ref (B29p)
+Y_adrC			(MC25	P)   : MUX 34		Ref (C41p)
+ROWM3			(MC11	FB)  : MUX 35		Ref (E78fb)
+ROWE3			(MC6	FB)  : MUX 36		Ref (E70fb)
+ROWC3			(MC9	FB)  : MUX 37		Ref (E73fb)
+ROWB3			(MC10	FB)  : MUX 39		Ref (E74fb)
+
+FanIn assignment for block D [33]
+{
+ROWI2,ROWG2,ROWJ2,ROWD2,ROWC2,ROWH2,ROWL2,RESET,ROWF2,ROWK2,ROWE2,ROWB2,ROWM2,ROWA2,
+X_adr0,X4,X_adr3,X_adr2,XADRCLK,X_adr1,
+Y_adr7,Y_adr0,Y_adrA,Y_adr1,Y_adr8,Y_adr5,Y_adr4,Y_adr9,Y_adrC,Y_adrB,Y_adr6,Y_adr3,Y_adr2,
+}
+Multiplexer assignment for block D
+Y_adr7			(MC20	P)   : MUX 0		Ref (A13p)
+Y_adr0			(MC26	P)   : MUX 1		Ref (F86p)
+Y_adrA			(MC23	P)   : MUX 2		Ref (B27p)
+Y_adr1			(MC14	P)   : MUX 3		Ref (F88p)
+ROWI2			(MC2	FB)  : MUX 4		Ref (C34fb)
+Y_adr8			(MC21	P)   : MUX 6		Ref (A11p)
+Y_adr5			(MC18	P)   : MUX 7		Ref (H118p)
+ROWG2			(MC4	FB)  : MUX 8		Ref (C36fb)
+X_adr0			(MC28	P)   : MUX 9		Ref (D51p)
+X4			(MC33	P)   : MUX 11		Ref (E69p)
+ROWJ2			(MC6	FB)  : MUX 12		Ref (C38fb)
+Y_adr4			(MC17	P)   : MUX 13		Ref (H117p)
+Y_adr9			(MC22	P)   : MUX 14		Ref (B29p)
+ROWD2			(MC10	FB)  : MUX 15		Ref (C42fb)
+Y_adrC			(MC25	P)   : MUX 16		Ref (C41p)
+ROWC2			(MC11	FB)  : MUX 17		Ref (C43fb)
+Y_adrB			(MC24	P)   : MUX 18		Ref (C43p)
+ROWH2			(MC8	FB)  : MUX 20		Ref (C40fb)
+Y_adr6			(MC19	P)   : MUX 21		Ref (D56p)
+ROWL2			(MC5	FB)  : MUX 22		Ref (C37fb)
+Y_adr3			(MC16	P)   : MUX 23		Ref (G99p)
+RESET			(MC32	FB)  : MUX 24		Ref (GCLR)
+ROWF2			(MC9	FB)  : MUX 25		Ref (C41fb)
+Y_adr2			(MC15	P)   : MUX 27		Ref (G97p)
+X_adr3			(MC31	P)   : MUX 29		Ref (E67p)
+ROWK2			(MC3	FB)  : MUX 30		Ref (C35fb)
+X_adr2			(MC30	P)   : MUX 31		Ref (E65p)
+XADRCLK			(MC27	P)   : MUX 32		Ref (E75p)
+X_adr1			(MC29	P)   : MUX 33		Ref (D49p)
+ROWE2			(MC7	FB)  : MUX 36		Ref (C39fb)
+ROWB2			(MC12	FB)  : MUX 37		Ref (C47fb)
+ROWM2			(MC1	FB)  : MUX 38		Ref (C33fb)
+ROWA2			(MC13	FB)  : MUX 39		Ref (C48fb)
+
+FanIn assignment for block E [33]
+{
+ROWH1,ROWK1,ROWL1,ROWB1,ROWI1,ROWE1,ROWJ1,ROWD1,ROWM1,ROWC1,RESET,ROWA1,ROWG1,ROWF1,
+X3,X_adr0,X_adr1,X_adr3,X_adr2,XADRCLK,
+Y_adr7,Y_adr3,Y_adrA,Y_adr1,Y_adr2,Y_adr5,Y_adr4,Y_adr9,Y_adr6,Y_adrC,Y_adrB,Y_adr0,Y_adr8,
+}
+Multiplexer assignment for block E
+Y_adr7			(MC20	P)   : MUX 0		Ref (A13p)
+Y_adr3			(MC16	P)   : MUX 1		Ref (G99p)
+Y_adrA			(MC23	P)   : MUX 2		Ref (B27p)
+Y_adr1			(MC14	P)   : MUX 3		Ref (F88p)
+X3			(MC33	P)   : MUX 4		Ref (D57p)
+ROWH1			(MC11	FB)  : MUX 5		Ref (B30fb)
+Y_adr2			(MC15	P)   : MUX 7		Ref (G97p)
+ROWK1			(MC3	FB)  : MUX 8		Ref (B22fb)
+X_adr0			(MC28	P)   : MUX 9		Ref (D51p)
+Y_adr5			(MC18	P)   : MUX 11		Ref (H118p)
+ROWL1			(MC5	FB)  : MUX 12		Ref (B24fb)
+Y_adr4			(MC17	P)   : MUX 13		Ref (H117p)
+Y_adr9			(MC22	P)   : MUX 14		Ref (B29p)
+Y_adr6			(MC19	P)   : MUX 15		Ref (D56p)
+Y_adrC			(MC25	P)   : MUX 16		Ref (C41p)
+ROWB1			(MC12	FB)  : MUX 17		Ref (B31fb)
+Y_adrB			(MC24	P)   : MUX 18		Ref (C43p)
+Y_adr0			(MC26	P)   : MUX 19		Ref (F86p)
+ROWI1			(MC1	FB)  : MUX 20		Ref (B20fb)
+ROWE1			(MC7	FB)  : MUX 21		Ref (B26fb)
+X_adr1			(MC29	P)   : MUX 23		Ref (D49p)
+Y_adr8			(MC21	P)   : MUX 24		Ref (A11p)
+ROWJ1			(MC6	FB)  : MUX 25		Ref (B25fb)
+ROWD1			(MC9	FB)  : MUX 27		Ref (B28fb)
+X_adr3			(MC31	P)   : MUX 29		Ref (E67p)
+ROWM1			(MC2	FB)  : MUX 30		Ref (B21fb)
+X_adr2			(MC30	P)   : MUX 31		Ref (E65p)
+XADRCLK			(MC27	P)   : MUX 32		Ref (E75p)
+ROWC1			(MC10	FB)  : MUX 35		Ref (B29fb)
+RESET			(MC32	FB)  : MUX 36		Ref (GCLR)
+ROWA1			(MC13	FB)  : MUX 37		Ref (B32fb)
+ROWG1			(MC4	FB)  : MUX 38		Ref (B23fb)
+ROWF1			(MC8	FB)  : MUX 39		Ref (B27fb)
+
+FanIn assignment for block F [33]
+{
+ROWH0,ROWF0,ROWJ0,ROWG0,ROWI0,ROWK0,ROWB0,ROWC0,ROWL0,ROWM0,RESET,ROWA0,ROWE0,ROWD0,
+X_adr1,X_adr0,X_adr3,X5,XADRCLK,X_adr2,
+Y_adr7,Y_adr3,Y_adrA,Y_adr1,Y_adr8,Y_adr2,Y_adrB,Y_adr0,Y_adr4,Y_adr9,Y_adr5,Y_adrC,Y_adr6,
+}
+Multiplexer assignment for block F
+Y_adr7			(MC20	P)   : MUX 0		Ref (A13p)
+Y_adr3			(MC16	P)   : MUX 1		Ref (G99p)
+Y_adrA			(MC23	P)   : MUX 2		Ref (B27p)
+Y_adr1			(MC14	P)   : MUX 3		Ref (F88p)
+ROWH0			(MC8	FB)  : MUX 4		Ref (A8fb)
+X_adr1			(MC29	P)   : MUX 5		Ref (D49p)
+Y_adr8			(MC21	P)   : MUX 6		Ref (A11p)
+Y_adr2			(MC15	P)   : MUX 7		Ref (G97p)
+ROWF0			(MC7	FB)  : MUX 8		Ref (A7fb)
+X_adr0			(MC28	P)   : MUX 9		Ref (D51p)
+Y_adrB			(MC24	P)   : MUX 10		Ref (C43p)
+Y_adr0			(MC26	P)   : MUX 11		Ref (F86p)
+ROWJ0			(MC6	FB)  : MUX 12		Ref (A6fb)
+Y_adr4			(MC17	P)   : MUX 13		Ref (H117p)
+Y_adr9			(MC22	P)   : MUX 14		Ref (B29p)
+X_adr3			(MC31	P)   : MUX 15		Ref (E67p)
+ROWG0			(MC2	FB)  : MUX 16		Ref (A2fb)
+ROWI0			(MC9	FB)  : MUX 17		Ref (A9fb)
+ROWK0			(MC3	FB)  : MUX 18		Ref (A3fb)
+ROWB0			(MC12	FB)  : MUX 21		Ref (A12fb)
+ROWC0			(MC11	FB)  : MUX 23		Ref (A11fb)
+ROWL0			(MC5	FB)  : MUX 24		Ref (A5fb)
+Y_adr5			(MC18	P)   : MUX 25		Ref (H118p)
+ROWM0			(MC1	FB)  : MUX 26		Ref (A1fb)
+X5			(MC33	P)   : MUX 27		Ref (E70p)
+XADRCLK			(MC27	P)   : MUX 28		Ref (E75p)
+X_adr2			(MC30	P)   : MUX 31		Ref (E65p)
+Y_adrC			(MC25	P)   : MUX 34		Ref (C41p)
+Y_adr6			(MC19	P)   : MUX 35		Ref (D56p)
+RESET			(MC32	FB)  : MUX 36		Ref (GCLR)
+ROWA0			(MC13	FB)  : MUX 37		Ref (A13fb)
+ROWE0			(MC4	FB)  : MUX 38		Ref (A4fb)
+ROWD0			(MC10	FB)  : MUX 39		Ref (A10fb)
+
+FanIn assignment for block G [33]
+{
+ROWD5,ROWG5,ROWM5,ROWK5,ROWI5,ROWF5,ROWA5,ROWE5,ROWH5,ROWC5,RESET,ROWB5,ROWL5,ROWJ5,
+X_adr0,X_adr2,X_adr3,X_adr1,XADRCLK,X6,
+Y_adr0,Y_adrC,Y_adr4,Y_adr3,Y_adr7,Y_adr2,Y_adr8,Y_adr5,Y_adr1,Y_adrB,Y_adr6,Y_adrA,Y_adr9,
+}
+Multiplexer assignment for block G
+ROWD5			(MC8	FB)  : MUX 0		Ref (F88fb)
+Y_adr0			(MC26	P)   : MUX 1		Ref (F86p)
+Y_adrC			(MC25	P)   : MUX 2		Ref (C41p)
+Y_adr4			(MC17	P)   : MUX 3		Ref (H117p)
+ROWG5			(MC4	FB)  : MUX 4		Ref (F84fb)
+Y_adr3			(MC16	P)   : MUX 5		Ref (G99p)
+Y_adr7			(MC20	P)   : MUX 6		Ref (A13p)
+Y_adr2			(MC15	P)   : MUX 7		Ref (G97p)
+ROWM5			(MC1	FB)  : MUX 8		Ref (F81fb)
+X_adr0			(MC28	P)   : MUX 9		Ref (D51p)
+Y_adr8			(MC21	P)   : MUX 10		Ref (A11p)
+Y_adr5			(MC18	P)   : MUX 11		Ref (H118p)
+ROWK5			(MC3	FB)  : MUX 12		Ref (F83fb)
+X_adr2			(MC30	P)   : MUX 13		Ref (E65p)
+ROWI5			(MC2	FB)  : MUX 14		Ref (F82fb)
+X_adr3			(MC31	P)   : MUX 15		Ref (E67p)
+Y_adr1			(MC14	P)   : MUX 17		Ref (F88p)
+Y_adrB			(MC24	P)   : MUX 18		Ref (C43p)
+Y_adr6			(MC19	P)   : MUX 21		Ref (D56p)
+ROWF5			(MC7	FB)  : MUX 22		Ref (F87fb)
+X_adr1			(MC29	P)   : MUX 23		Ref (D49p)
+Y_adrA			(MC23	P)   : MUX 24		Ref (B27p)
+ROWA5			(MC13	FB)  : MUX 25		Ref (F96fb)
+ROWE5			(MC6	FB)  : MUX 26		Ref (F86fb)
+ROWH5			(MC11	FB)  : MUX 27		Ref (F91fb)
+XADRCLK			(MC27	P)   : MUX 28		Ref (E75p)
+X6			(MC33	P)   : MUX 29		Ref (E72p)
+Y_adr9			(MC22	P)   : MUX 32		Ref (B29p)
+ROWC5			(MC10	FB)  : MUX 35		Ref (F90fb)
+RESET			(MC32	FB)  : MUX 36		Ref (GCLR)
+ROWB5			(MC12	FB)  : MUX 37		Ref (F95fb)
+ROWL5			(MC5	FB)  : MUX 38		Ref (F85fb)
+ROWJ5			(MC9	FB)  : MUX 39		Ref (F89fb)
+
+FanIn assignment for block H [33]
+{
+ROWJ4,ROWL4,ROWA4,ROWK4,ROWC4,ROWI4,ROWE4,ROWM4,ROWB4,ROWH4,RESET,ROWF4,ROWG4,ROWD4,
+X_adr1,X_adr2,X7,X_adr0,XADRCLK,X_adr3,
+Y_adr7,Y_adr0,Y_adrA,Y_adr1,Y_adr8,Y_adr5,Y_adr2,Y_adrB,Y_adrC,Y_adr3,Y_adr4,Y_adr9,Y_adr6,
+}
+Multiplexer assignment for block H
+Y_adr7			(MC20	P)   : MUX 0		Ref (A13p)
+Y_adr0			(MC26	P)   : MUX 1		Ref (F86p)
+Y_adrA			(MC23	P)   : MUX 2		Ref (B27p)
+Y_adr1			(MC14	P)   : MUX 3		Ref (F88p)
+ROWJ4			(MC2	FB)  : MUX 4		Ref (D50fb)
+X_adr1			(MC29	P)   : MUX 5		Ref (D49p)
+Y_adr8			(MC21	P)   : MUX 6		Ref (A11p)
+Y_adr5			(MC18	P)   : MUX 7		Ref (H118p)
+ROWL4			(MC1	FB)  : MUX 8		Ref (D49fb)
+Y_adr2			(MC15	P)   : MUX 9		Ref (G97p)
+Y_adrB			(MC24	P)   : MUX 10		Ref (C43p)
+ROWA4			(MC13	FB)  : MUX 11		Ref (D61fb)
+ROWK4			(MC6	FB)  : MUX 12		Ref (D54fb)
+X_adr2			(MC30	P)   : MUX 13		Ref (E65p)
+X7			(MC33	P)   : MUX 14		Ref (E73p)
+Y_adrC			(MC25	P)   : MUX 16		Ref (C41p)
+ROWC4			(MC11	FB)  : MUX 17		Ref (D59fb)
+ROWI4			(MC4	FB)  : MUX 18		Ref (D52fb)
+Y_adr3			(MC16	P)   : MUX 19		Ref (G99p)
+Y_adr4			(MC17	P)   : MUX 21		Ref (H117p)
+ROWE4			(MC8	FB)  : MUX 22		Ref (D56fb)
+ROWM4			(MC5	FB)  : MUX 24		Ref (D53fb)
+ROWB4			(MC12	FB)  : MUX 25		Ref (D60fb)
+X_adr0			(MC28	P)   : MUX 27		Ref (D51p)
+XADRCLK			(MC27	P)   : MUX 28		Ref (E75p)
+X_adr3			(MC31	P)   : MUX 29		Ref (E67p)
+ROWH4			(MC3	FB)  : MUX 30		Ref (D51fb)
+Y_adr9			(MC22	P)   : MUX 32		Ref (B29p)
+Y_adr6			(MC19	P)   : MUX 35		Ref (D56p)
+RESET			(MC32	FB)  : MUX 36		Ref (GCLR)
+ROWF4			(MC9	FB)  : MUX 37		Ref (D57fb)
+ROWG4			(MC7	FB)  : MUX 38		Ref (D55fb)
+ROWD4			(MC10	FB)  : MUX 39		Ref (D58fb)
+
+Creating JEDEC file C:\USERS\BERT_\DOCUMENTS\03_MSX\MSX_KEYBOARD_INBOUW\MSX_KEYBOARD_V5\CPLD\MSX1KBDV5.jed ...
+
+TQFP100 programmed logic:
+-----------------------------------
+D2 = ((ROWB2.Q & !Y_adr1)
+	# (ROWC2.Q & !Y_adr2)
+	# (ROWD2.Q & !Y_adr3)
+	# (ROWE2.Q & !Y_adr4)
+	# (ROWF2.Q & !Y_adr5)
+	# (ROWG2.Q & !Y_adr6)
+	# (ROWH2.Q & !Y_adr7)
+	# (ROWI2.Q & !Y_adr8)
+	# (ROWJ2.Q & !Y_adr9)
+	# (ROWK2.Q & !Y_adrA)
+	# (ROWL2.Q & !Y_adrB)
+	# (ROWM2.Q & !Y_adrC)
+	# (ROWA2.Q & !Y_adr0));
+
+D0 = ((ROWB0.Q & !Y_adr1)
+	# (ROWC0.Q & !Y_adr2)
+	# (ROWD0.Q & !Y_adr3)
+	# (ROWE0.Q & !Y_adr4)
+	# (ROWF0.Q & !Y_adr5)
+	# (ROWG0.Q & !Y_adr6)
+	# (ROWH0.Q & !Y_adr7)
+	# (ROWI0.Q & !Y_adr8)
+	# (ROWJ0.Q & !Y_adr9)
+	# (ROWK0.Q & !Y_adrA)
+	# (ROWL0.Q & !Y_adrB)
+	# (ROWM0.Q & !Y_adrC)
+	# (ROWA0.Q & !Y_adr0));
+
+D1 = ((ROWB1.Q & !Y_adr1)
+	# (ROWC1.Q & !Y_adr2)
+	# (ROWD1.Q & !Y_adr3)
+	# (ROWE1.Q & !Y_adr4)
+	# (ROWF1.Q & !Y_adr5)
+	# (ROWG1.Q & !Y_adr6)
+	# (ROWH1.Q & !Y_adr7)
+	# (ROWI1.Q & !Y_adr8)
+	# (ROWJ1.Q & !Y_adr9)
+	# (ROWK1.Q & !Y_adrA)
+	# (ROWL1.Q & !Y_adrB)
+	# (ROWM1.Q & !Y_adrC)
+	# (ROWA1.Q & !Y_adr0));
+
+D4 = ((ROWB4.Q & !Y_adr1)
+	# (ROWC4.Q & !Y_adr2)
+	# (ROWD4.Q & !Y_adr3)
+	# (ROWE4.Q & !Y_adr4)
+	# (ROWF4.Q & !Y_adr5)
+	# (ROWG4.Q & !Y_adr6)
+	# (ROWH4.Q & !Y_adr7)
+	# (ROWI4.Q & !Y_adr8)
+	# (ROWJ4.Q & !Y_adr9)
+	# (ROWK4.Q & !Y_adrA)
+	# (ROWL4.Q & !Y_adrB)
+	# (ROWM4.Q & !Y_adrC)
+	# (ROWA4.Q & !Y_adr0));
+
+D3 = ((ROWB3.Q & !Y_adr1)
+	# (ROWC3.Q & !Y_adr2)
+	# (ROWD3.Q & !Y_adr3)
+	# (ROWE3.Q & !Y_adr4)
+	# (ROWF3.Q & !Y_adr5)
+	# (ROWG3.Q & !Y_adr6)
+	# (ROWH3.Q & !Y_adr7)
+	# (ROWI3.Q & !Y_adr8)
+	# (ROWJ3.Q & !Y_adr9)
+	# (ROWK3.Q & !Y_adrA)
+	# (ROWL3.Q & !Y_adrB)
+	# (ROWM3.Q & !Y_adrC)
+	# (ROWA3.Q & !Y_adr0));
+
+D6 = ((ROWB6.Q & !Y_adr1)
+	# (ROWC6.Q & !Y_adr2)
+	# (ROWD6.Q & !Y_adr3)
+	# (ROWE6.Q & !Y_adr4)
+	# (ROWF6.Q & !Y_adr5)
+	# (ROWG6.Q & !Y_adr6)
+	# (ROWH6.Q & !Y_adr7)
+	# (ROWI6.Q & !Y_adr8)
+	# (ROWJ6.Q & !Y_adr9)
+	# (ROWK6.Q & !Y_adrA)
+	# (ROWL6.Q & !Y_adrB)
+	# (ROWM6.Q & !Y_adrC)
+	# (ROWA6.Q & !Y_adr0));
+
+ROWA0.D = X0;
+
+D5 = ((ROWB5.Q & !Y_adr1)
+	# (ROWC5.Q & !Y_adr2)
+	# (ROWD5.Q & !Y_adr3)
+	# (ROWE5.Q & !Y_adr4)
+	# (ROWF5.Q & !Y_adr5)
+	# (ROWG5.Q & !Y_adr6)
+	# (ROWH5.Q & !Y_adr7)
+	# (ROWI5.Q & !Y_adr8)
+	# (ROWJ5.Q & !Y_adr9)
+	# (ROWK5.Q & !Y_adrA)
+	# (ROWL5.Q & !Y_adrB)
+	# (ROWM5.Q & !Y_adrC)
+	# (ROWA5.Q & !Y_adr0));
+
+D7 = ((ROWB7.Q & !Y_adr1)
+	# (ROWC7.Q & !Y_adr2)
+	# (ROWD7.Q & !Y_adr3)
+	# (ROWE7.Q & !Y_adr4)
+	# (ROWF7.Q & !Y_adr5)
+	# (ROWG7.Q & !Y_adr6)
+	# (ROWH7.Q & !Y_adr7)
+	# (ROWI7.Q & !Y_adr8)
+	# (ROWJ7.Q & !Y_adr9)
+	# (ROWK7.Q & !Y_adrA)
+	# (ROWL7.Q & !Y_adrB)
+	# (ROWM7.Q & !Y_adrC)
+	# (ROWA7.Q & !Y_adr0));
+
+ROWA1.D = X1;
+
+ROWA2.D = X2;
+
+ROWA4.D = X4;
+
+ROWA3.D = X3;
+
+ROWA5.D = X5;
+
+ROWA6.D = X6;
+
+ROWA7.D = X7;
+
+ROWB0.D = X0;
+
+ROWB1.D = X1;
+
+ROWB2.D = X2;
+
+ROWB3.D = X3;
+
+ROWB4.D = X4;
+
+ROWB5.D = X5;
+
+ROWB7.D = X7;
+
+ROWB6.D = X6;
+
+ROWC0.D = X0;
+
+ROWC1.D = X1;
+
+ROWC2.D = X2;
+
+ROWC4.D = X4;
+
+ROWC3.D = X3;
+
+ROWC5.D = X5;
+
+ROWC6.D = X6;
+
+ROWC7.D = X7;
+
+ROWD0.D = X0;
+
+ROWD1.D = X1;
+
+ROWD2.D = X2;
+
+ROWD3.D = X3;
+
+ROWD4.D = X4;
+
+ROWD5.D = X5;
+
+ROWD6.D = X6;
+
+ROWD7.D = X7;
+
+ROWE0.D = X0;
+
+ROWE1.D = X1;
+
+ROWE3.D = X3;
+
+ROWE2.D = X2;
+
+ROWE4.D = X4;
+
+ROWE5.D = X5;
+
+ROWE6.D = X6;
+
+ROWE7.D = X7;
+
+ROWF0.D = X0;
+
+ROWF1.D = X1;
+
+ROWF2.D = X2;
+
+ROWF3.D = X3;
+
+ROWF4.D = X4;
+
+ROWF5.D = X5;
+
+ROWF6.D = X6;
+
+ROWF7.D = X7;
+
+ROWG0.D = X0;
+
+ROWG1.D = X1;
+
+ROWG2.D = X2;
+
+ROWG3.D = X3;
+
+ROWG4.D = X4;
+
+ROWG5.D = X5;
+
+ROWG7.D = X7;
+
+ROWG6.D = X6;
+
+ROWH0.D = X0;
+
+ROWH1.D = X1;
+
+ROWH2.D = X2;
+
+ROWH3.D = X3;
+
+ROWH4.D = X4;
+
+ROWH5.D = X5;
+
+ROWH6.D = X6;
+
+ROWH7.D = X7;
+
+ROWI0.D = X0;
+
+ROWI1.D = X1;
+
+ROWI2.D = X2;
+
+ROWI3.D = X3;
+
+ROWI4.D = X4;
+
+ROWI5.D = X5;
+
+ROWI6.D = X6;
+
+ROWI7.D = X7;
+
+ROWJ0.D = X0;
+
+ROWJ1.D = X1;
+
+ROWJ2.D = X2;
+
+ROWJ3.D = X3;
+
+ROWJ4.D = X4;
+
+ROWJ5.D = X5;
+
+ROWJ7.D = X7;
+
+ROWJ6.D = X6;
+
+ROWK0.D = X0;
+
+ROWK1.D = X1;
+
+ROWK2.D = X2;
+
+ROWK3.D = X3;
+
+ROWK4.D = X4;
+
+ROWK5.D = X5;
+
+ROWK6.D = X6;
+
+ROWK7.D = X7;
+
+ROWL0.D = X0;
+
+ROWL1.D = X1;
+
+ROWL2.D = X2;
+
+ROWL3.D = X3;
+
+ROWL4.D = X4;
+
+ROWL5.D = X5;
+
+ROWL7.D = X7;
+
+ROWL6.D = X6;
+
+ROWM0.D = X0;
+
+ROWM1.D = X1;
+
+ROWM2.D = X2;
+
+ROWM3.D = X3;
+
+ROWM4.D = X4;
+
+ROWM5.D = X5;
+
+ROWM6.D = X6;
+
+ROWM7.D = X7;
+
+ROWA0.C = (XADRCLK & !X_adr0 & !X_adr1 & !X_adr2 & !X_adr3);
+
+ROWA0.AP = !RESET;
+
+ROWA1.C = (XADRCLK & !X_adr0 & !X_adr1 & !X_adr2 & !X_adr3);
+
+ROWA1.AP = !RESET;
+
+ROWA2.C = (XADRCLK & !X_adr0 & !X_adr1 & !X_adr2 & !X_adr3);
+
+ROWA2.AP = !RESET;
+
+ROWA4.C = (XADRCLK & !X_adr0 & !X_adr1 & !X_adr2 & !X_adr3);
+
+ROWA4.AP = !RESET;
+
+ROWA3.C = (XADRCLK & !X_adr0 & !X_adr1 & !X_adr2 & !X_adr3);
+
+ROWA3.AP = !RESET;
+
+ROWA5.C = (XADRCLK & !X_adr0 & !X_adr1 & !X_adr2 & !X_adr3);
+
+ROWA5.AP = !RESET;
+
+ROWA6.C = (XADRCLK & !X_adr0 & !X_adr1 & !X_adr2 & !X_adr3);
+
+ROWA6.AP = !RESET;
+
+ROWA7.C = (XADRCLK & !X_adr0 & !X_adr1 & !X_adr2 & !X_adr3);
+
+ROWA7.AP = !RESET;
+
+ROWB0.C = (XADRCLK & X_adr0 & !X_adr1 & !X_adr2 & !X_adr3);
+
+ROWB0.AP = !RESET;
+
+ROWB1.C = (XADRCLK & X_adr0 & !X_adr1 & !X_adr2 & !X_adr3);
+
+ROWB1.AP = !RESET;
+
+ROWB2.C = (XADRCLK & X_adr0 & !X_adr1 & !X_adr2 & !X_adr3);
+
+ROWB2.AP = !RESET;
+
+ROWB3.C = (XADRCLK & X_adr0 & !X_adr1 & !X_adr2 & !X_adr3);
+
+ROWB3.AP = !RESET;
+
+ROWB4.C = (XADRCLK & X_adr0 & !X_adr1 & !X_adr2 & !X_adr3);
+
+ROWB4.AP = !RESET;
+
+ROWB5.C = (XADRCLK & X_adr0 & !X_adr1 & !X_adr2 & !X_adr3);
+
+ROWB5.AP = !RESET;
+
+ROWB7.C = (XADRCLK & X_adr0 & !X_adr1 & !X_adr2 & !X_adr3);
+
+ROWB7.AP = !RESET;
+
+ROWB6.C = (XADRCLK & X_adr0 & !X_adr1 & !X_adr2 & !X_adr3);
+
+ROWB6.AP = !RESET;
+
+ROWC0.C = (XADRCLK & !X_adr0 & X_adr1 & !X_adr2 & !X_adr3);
+
+ROWC0.AP = !RESET;
+
+ROWC1.C = (XADRCLK & !X_adr0 & X_adr1 & !X_adr2 & !X_adr3);
+
+ROWC1.AP = !RESET;
+
+ROWC2.C = (XADRCLK & !X_adr0 & X_adr1 & !X_adr2 & !X_adr3);
+
+ROWC2.AP = !RESET;
+
+ROWC4.C = (XADRCLK & !X_adr0 & X_adr1 & !X_adr2 & !X_adr3);
+
+ROWC4.AP = !RESET;
+
+ROWC3.C = (XADRCLK & !X_adr0 & X_adr1 & !X_adr2 & !X_adr3);
+
+ROWC3.AP = !RESET;
+
+ROWC5.C = (XADRCLK & !X_adr0 & X_adr1 & !X_adr2 & !X_adr3);
+
+ROWC5.AP = !RESET;
+
+ROWC6.C = (XADRCLK & !X_adr0 & X_adr1 & !X_adr2 & !X_adr3);
+
+ROWC6.AP = !RESET;
+
+ROWC7.C = (XADRCLK & !X_adr0 & X_adr1 & !X_adr2 & !X_adr3);
+
+ROWC7.AP = !RESET;
+
+ROWD0.C = (XADRCLK & X_adr0 & X_adr1 & !X_adr2 & !X_adr3);
+
+ROWD0.AP = !RESET;
+
+ROWD1.C = (XADRCLK & X_adr0 & X_adr1 & !X_adr2 & !X_adr3);
+
+ROWD1.AP = !RESET;
+
+ROWD2.C = (XADRCLK & X_adr0 & X_adr1 & !X_adr2 & !X_adr3);
+
+ROWD2.AP = !RESET;
+
+ROWD3.C = (XADRCLK & X_adr0 & X_adr1 & !X_adr2 & !X_adr3);
+
+ROWD3.AP = !RESET;
+
+ROWD4.C = (XADRCLK & X_adr0 & X_adr1 & !X_adr2 & !X_adr3);
+
+ROWD4.AP = !RESET;
+
+ROWD5.C = (XADRCLK & X_adr0 & X_adr1 & !X_adr2 & !X_adr3);
+
+ROWD5.AP = !RESET;
+
+ROWD6.C = (XADRCLK & X_adr0 & X_adr1 & !X_adr2 & !X_adr3);
+
+ROWD6.AP = !RESET;
+
+ROWD7.C = (XADRCLK & X_adr0 & X_adr1 & !X_adr2 & !X_adr3);
+
+ROWD7.AP = !RESET;
+
+ROWE0.C = (XADRCLK & !X_adr0 & !X_adr1 & X_adr2 & !X_adr3);
+
+ROWE0.AP = !RESET;
+
+ROWE1.C = (XADRCLK & !X_adr0 & !X_adr1 & X_adr2 & !X_adr3);
+
+ROWE1.AP = !RESET;
+
+ROWE3.C = (XADRCLK & !X_adr0 & !X_adr1 & X_adr2 & !X_adr3);
+
+ROWE3.AP = !RESET;
+
+ROWE2.C = (XADRCLK & !X_adr0 & !X_adr1 & X_adr2 & !X_adr3);
+
+ROWE2.AP = !RESET;
+
+ROWE4.C = (XADRCLK & !X_adr0 & !X_adr1 & X_adr2 & !X_adr3);
+
+ROWE4.AP = !RESET;
+
+ROWE5.C = (XADRCLK & !X_adr0 & !X_adr1 & X_adr2 & !X_adr3);
+
+ROWE5.AP = !RESET;
+
+ROWE6.C = (XADRCLK & !X_adr0 & !X_adr1 & X_adr2 & !X_adr3);
+
+ROWE6.AP = !RESET;
+
+ROWE7.C = (XADRCLK & !X_adr0 & !X_adr1 & X_adr2 & !X_adr3);
+
+ROWE7.AP = !RESET;
+
+ROWF0.C = (XADRCLK & X_adr0 & !X_adr1 & X_adr2 & !X_adr3);
+
+ROWF0.AP = !RESET;
+
+ROWF1.C = (XADRCLK & X_adr0 & !X_adr1 & X_adr2 & !X_adr3);
+
+ROWF1.AP = !RESET;
+
+ROWF2.C = (XADRCLK & X_adr0 & !X_adr1 & X_adr2 & !X_adr3);
+
+ROWF2.AP = !RESET;
+
+ROWF3.C = (XADRCLK & X_adr0 & !X_adr1 & X_adr2 & !X_adr3);
+
+ROWF3.AP = !RESET;
+
+ROWF4.C = (XADRCLK & X_adr0 & !X_adr1 & X_adr2 & !X_adr3);
+
+ROWF4.AP = !RESET;
+
+ROWF5.C = (XADRCLK & X_adr0 & !X_adr1 & X_adr2 & !X_adr3);
+
+ROWF5.AP = !RESET;
+
+ROWF6.C = (XADRCLK & X_adr0 & !X_adr1 & X_adr2 & !X_adr3);
+
+ROWF6.AP = !RESET;
+
+ROWF7.C = (XADRCLK & X_adr0 & !X_adr1 & X_adr2 & !X_adr3);
+
+ROWF7.AP = !RESET;
+
+ROWG0.C = (XADRCLK & !X_adr0 & X_adr1 & X_adr2 & !X_adr3);
+
+ROWG0.AP = !RESET;
+
+ROWG1.C = (XADRCLK & !X_adr0 & X_adr1 & X_adr2 & !X_adr3);
+
+ROWG1.AP = !RESET;
+
+ROWG2.C = (XADRCLK & !X_adr0 & X_adr1 & X_adr2 & !X_adr3);
+
+ROWG2.AP = !RESET;
+
+ROWG3.C = (XADRCLK & !X_adr0 & X_adr1 & X_adr2 & !X_adr3);
+
+ROWG3.AP = !RESET;
+
+ROWG4.C = (XADRCLK & !X_adr0 & X_adr1 & X_adr2 & !X_adr3);
+
+ROWG4.AP = !RESET;
+
+ROWG5.C = (XADRCLK & !X_adr0 & X_adr1 & X_adr2 & !X_adr3);
+
+ROWG5.AP = !RESET;
+
+ROWG7.C = (XADRCLK & !X_adr0 & X_adr1 & X_adr2 & !X_adr3);
+
+ROWG7.AP = !RESET;
+
+ROWG6.C = (XADRCLK & !X_adr0 & X_adr1 & X_adr2 & !X_adr3);
+
+ROWG6.AP = !RESET;
+
+ROWH0.C = (XADRCLK & X_adr0 & X_adr1 & X_adr2 & !X_adr3);
+
+ROWH0.AP = !RESET;
+
+ROWH1.C = (XADRCLK & X_adr0 & X_adr1 & X_adr2 & !X_adr3);
+
+ROWH1.AP = !RESET;
+
+ROWH2.C = (XADRCLK & X_adr0 & X_adr1 & X_adr2 & !X_adr3);
+
+ROWH2.AP = !RESET;
+
+ROWH3.C = (XADRCLK & X_adr0 & X_adr1 & X_adr2 & !X_adr3);
+
+ROWH3.AP = !RESET;
+
+ROWH4.C = (XADRCLK & X_adr0 & X_adr1 & X_adr2 & !X_adr3);
+
+ROWH4.AP = !RESET;
+
+ROWH5.C = (XADRCLK & X_adr0 & X_adr1 & X_adr2 & !X_adr3);
+
+ROWH5.AP = !RESET;
+
+ROWH6.C = (XADRCLK & X_adr0 & X_adr1 & X_adr2 & !X_adr3);
+
+ROWH6.AP = !RESET;
+
+ROWH7.C = (XADRCLK & X_adr0 & X_adr1 & X_adr2 & !X_adr3);
+
+ROWH7.AP = !RESET;
+
+ROWI0.C = (XADRCLK & !X_adr0 & !X_adr1 & !X_adr2 & X_adr3);
+
+ROWI0.AP = !RESET;
+
+ROWI1.C = (XADRCLK & !X_adr0 & !X_adr1 & !X_adr2 & X_adr3);
+
+ROWI1.AP = !RESET;
+
+ROWI2.C = (XADRCLK & !X_adr0 & !X_adr1 & !X_adr2 & X_adr3);
+
+ROWI2.AP = !RESET;
+
+ROWI3.C = (XADRCLK & !X_adr0 & !X_adr1 & !X_adr2 & X_adr3);
+
+ROWI3.AP = !RESET;
+
+ROWI4.C = (XADRCLK & !X_adr0 & !X_adr1 & !X_adr2 & X_adr3);
+
+ROWI4.AP = !RESET;
+
+ROWI5.C = (XADRCLK & !X_adr0 & !X_adr1 & !X_adr2 & X_adr3);
+
+ROWI5.AP = !RESET;
+
+ROWI6.C = (XADRCLK & !X_adr0 & !X_adr1 & !X_adr2 & X_adr3);
+
+ROWI6.AP = !RESET;
+
+ROWI7.C = (XADRCLK & !X_adr0 & !X_adr1 & !X_adr2 & X_adr3);
+
+ROWI7.AP = !RESET;
+
+ROWJ0.C = (XADRCLK & X_adr0 & !X_adr1 & !X_adr2 & X_adr3);
+
+ROWJ0.AP = !RESET;
+
+ROWJ1.C = (XADRCLK & X_adr0 & !X_adr1 & !X_adr2 & X_adr3);
+
+ROWJ1.AP = !RESET;
+
+ROWJ2.C = (XADRCLK & X_adr0 & !X_adr1 & !X_adr2 & X_adr3);
+
+ROWJ2.AP = !RESET;
+
+ROWJ3.C = (XADRCLK & X_adr0 & !X_adr1 & !X_adr2 & X_adr3);
+
+ROWJ3.AP = !RESET;
+
+ROWJ4.C = (XADRCLK & X_adr0 & !X_adr1 & !X_adr2 & X_adr3);
+
+ROWJ4.AP = !RESET;
+
+ROWJ5.C = (XADRCLK & X_adr0 & !X_adr1 & !X_adr2 & X_adr3);
+
+ROWJ5.AP = !RESET;
+
+ROWJ7.C = (XADRCLK & X_adr0 & !X_adr1 & !X_adr2 & X_adr3);
+
+ROWJ7.AP = !RESET;
+
+ROWJ6.C = (XADRCLK & X_adr0 & !X_adr1 & !X_adr2 & X_adr3);
+
+ROWJ6.AP = !RESET;
+
+ROWK0.C = (XADRCLK & !X_adr0 & X_adr1 & !X_adr2 & X_adr3);
+
+ROWK0.AP = !RESET;
+
+ROWK1.C = (XADRCLK & !X_adr0 & X_adr1 & !X_adr2 & X_adr3);
+
+ROWK1.AP = !RESET;
+
+ROWK2.C = (XADRCLK & !X_adr0 & X_adr1 & !X_adr2 & X_adr3);
+
+ROWK2.AP = !RESET;
+
+ROWK3.C = (XADRCLK & !X_adr0 & X_adr1 & !X_adr2 & X_adr3);
+
+ROWK3.AP = !RESET;
+
+ROWK4.C = (XADRCLK & !X_adr0 & X_adr1 & !X_adr2 & X_adr3);
+
+ROWK4.AP = !RESET;
+
+ROWK5.C = (XADRCLK & !X_adr0 & X_adr1 & !X_adr2 & X_adr3);
+
+ROWK5.AP = !RESET;
+
+ROWK6.C = (XADRCLK & !X_adr0 & X_adr1 & !X_adr2 & X_adr3);
+
+ROWK6.AP = !RESET;
+
+ROWK7.C = (XADRCLK & !X_adr0 & X_adr1 & !X_adr2 & X_adr3);
+
+ROWK7.AP = !RESET;
+
+ROWL0.C = (XADRCLK & X_adr0 & X_adr1 & !X_adr2 & X_adr3);
+
+ROWL0.AP = !RESET;
+
+ROWL1.C = (XADRCLK & X_adr0 & X_adr1 & !X_adr2 & X_adr3);
+
+ROWL1.AP = !RESET;
+
+ROWL2.C = (XADRCLK & X_adr0 & X_adr1 & !X_adr2 & X_adr3);
+
+ROWL2.AP = !RESET;
+
+ROWL3.C = (XADRCLK & X_adr0 & X_adr1 & !X_adr2 & X_adr3);
+
+ROWL3.AP = !RESET;
+
+ROWL4.C = (XADRCLK & X_adr0 & X_adr1 & !X_adr2 & X_adr3);
+
+ROWL4.AP = !RESET;
+
+ROWL5.C = (XADRCLK & X_adr0 & X_adr1 & !X_adr2 & X_adr3);
+
+ROWL5.AP = !RESET;
+
+ROWL7.C = (XADRCLK & X_adr0 & X_adr1 & !X_adr2 & X_adr3);
+
+ROWL7.AP = !RESET;
+
+ROWL6.C = (XADRCLK & X_adr0 & X_adr1 & !X_adr2 & X_adr3);
+
+ROWL6.AP = !RESET;
+
+ROWM0.C = (XADRCLK & !X_adr0 & !X_adr1 & X_adr2 & X_adr3);
+
+ROWM0.AP = !RESET;
+
+ROWM1.C = (XADRCLK & !X_adr0 & !X_adr1 & X_adr2 & X_adr3);
+
+ROWM1.AP = !RESET;
+
+ROWM2.C = (XADRCLK & !X_adr0 & !X_adr1 & X_adr2 & X_adr3);
+
+ROWM2.AP = !RESET;
+
+ROWM3.C = (XADRCLK & !X_adr0 & !X_adr1 & X_adr2 & X_adr3);
+
+ROWM3.AP = !RESET;
+
+ROWM4.C = (XADRCLK & !X_adr0 & !X_adr1 & X_adr2 & X_adr3);
+
+ROWM4.AP = !RESET;
+
+ROWM5.C = (XADRCLK & !X_adr0 & !X_adr1 & X_adr2 & X_adr3);
+
+ROWM5.AP = !RESET;
+
+ROWM6.C = (XADRCLK & !X_adr0 & !X_adr1 & X_adr2 & X_adr3);
+
+ROWM6.AP = !RESET;
+
+ROWM7.C = (XADRCLK & !X_adr0 & !X_adr1 & X_adr2 & X_adr3);
+
+ROWM7.AP = !RESET;
+
+
+TQFP100 Pin/Node Placement:
+------------------------------------
+Pin 4  = TDI; /* MC 32 */
+Pin 6  = Y_adr9; /* MC 29 */
+Pin 7  = Y_adrA; /* MC 27 */
+Pin 13 = D6; /* MC 19 */ 
+Pin 15 = TMS; /* MC 48 */ 
+Pin 16 = D3; /* MC 46 */ 
+Pin 19 = Y_adrB; /* MC 43 */ 
+Pin 20 = Y_adrC; /* MC 41 */ 
+Pin 27 = D2; /* MC 64 */ 
+Pin 28 = X0; /* MC 62 */ 
+Pin 29 = X1; /* MC 61 */ 
+Pin 30 = X2; /* MC 59 */ 
+Pin 31 = X3; /* MC 57 */ 
+Pin 32 = Y_adr6; /* MC 56 */ 
+Pin 36 = X_adr0; /* MC 51 */ 
+Pin 37 = X_adr1; /* MC 49 */ 
+Pin 40 = X_adr2; /* MC 65 */ 
+Pin 41 = X_adr3; /* MC 67 */ 
+Pin 42 = X4; /* MC 69 */ 
+Pin 44 = X5; /* MC 70 */ 
+Pin 45 = X6; /* MC 72 */ 
+Pin 46 = X7; /* MC 73 */ 
+Pin 47 = XADRCLK; /* MC 75 */ 
+Pin 48 = D1; /* MC 77 */ 
+Pin 55 = Y_adr0; /* MC 86 */ 
+Pin 56 = Y_adr1; /* MC 88 */ 
+Pin 61 = D0; /* MC 94 */ 
+Pin 62 = TCK; /* MC 96 */ 
+Pin 63 = Y_adr2; /* MC 97 */ 
+Pin 64 = Y_adr3; /* MC 99 */ 
+Pin 72 = D5; /* MC 110 */ 
+Pin 73 = TDO; /* MC 112 */ 
+Pin 77 = Y_adr4; /* MC 117 */ 
+Pin 78 = Y_adr5; /* MC 118 */ 
+Pin 85 = D4; /* MC 128 */ 
+Pin 89 = RESET;
+Pin 92 = D7; /* MC 16 */ 
+Pin 94 = Y_adr7; /* MC 13 */ 
+Pin 96 = Y_adr8; /* MC 11 */ 
+PINNODE 601 = ROWM0; /* MC 1 Feedback */
+PINNODE 602 = ROWG0; /* MC 2 Feedback */
+PINNODE 603 = ROWK0; /* MC 3 Feedback */
+PINNODE 604 = ROWE0; /* MC 4 Feedback */
+PINNODE 605 = ROWL0; /* MC 5 Feedback */
+PINNODE 606 = ROWJ0; /* MC 6 Feedback */
+PINNODE 607 = ROWF0; /* MC 7 Feedback */
+PINNODE 608 = ROWH0; /* MC 8 Feedback */
+PINNODE 609 = ROWI0; /* MC 9 Feedback */
+PINNODE 610 = ROWD0; /* MC 10 Feedback */
+PINNODE 611 = ROWC0; /* MC 11 Feedback */
+PINNODE 612 = ROWB0; /* MC 12 Feedback */
+PINNODE 613 = ROWA0; /* MC 13 Feedback */
+PINNODE 620 = ROWI1; /* MC 20 Feedback */
+PINNODE 621 = ROWM1; /* MC 21 Feedback */
+PINNODE 622 = ROWK1; /* MC 22 Feedback */
+PINNODE 623 = ROWG1; /* MC 23 Feedback */
+PINNODE 624 = ROWL1; /* MC 24 Feedback */
+PINNODE 625 = ROWJ1; /* MC 25 Feedback */
+PINNODE 626 = ROWE1; /* MC 26 Feedback */
+PINNODE 627 = ROWF1; /* MC 27 Feedback */
+PINNODE 628 = ROWD1; /* MC 28 Feedback */
+PINNODE 629 = ROWC1; /* MC 29 Feedback */
+PINNODE 630 = ROWH1; /* MC 30 Feedback */
+PINNODE 631 = ROWB1; /* MC 31 Feedback */
+PINNODE 632 = ROWA1; /* MC 32 Feedback */
+PINNODE 633 = ROWM2; /* MC 33 Feedback */
+PINNODE 634 = ROWI2; /* MC 34 Feedback */
+PINNODE 635 = ROWK2; /* MC 35 Feedback */
+PINNODE 636 = ROWG2; /* MC 36 Feedback */
+PINNODE 637 = ROWL2; /* MC 37 Feedback */
+PINNODE 638 = ROWJ2; /* MC 38 Feedback */
+PINNODE 639 = ROWE2; /* MC 39 Feedback */
+PINNODE 640 = ROWH2; /* MC 40 Feedback */
+PINNODE 641 = ROWF2; /* MC 41 Feedback */
+PINNODE 642 = ROWD2; /* MC 42 Feedback */
+PINNODE 643 = ROWC2; /* MC 43 Feedback */
+PINNODE 647 = ROWB2; /* MC 47 Feedback */
+PINNODE 648 = ROWA2; /* MC 48 Feedback */
+PINNODE 649 = ROWL4; /* MC 49 Feedback */
+PINNODE 650 = ROWJ4; /* MC 50 Feedback */
+PINNODE 651 = ROWH4; /* MC 51 Feedback */
+PINNODE 652 = ROWI4; /* MC 52 Feedback */
+PINNODE 653 = ROWM4; /* MC 53 Feedback */
+PINNODE 654 = ROWK4; /* MC 54 Feedback */
+PINNODE 655 = ROWG4; /* MC 55 Feedback */
+PINNODE 656 = ROWE4; /* MC 56 Feedback */
+PINNODE 657 = ROWF4; /* MC 57 Feedback */
+PINNODE 658 = ROWD4; /* MC 58 Feedback */
+PINNODE 659 = ROWC4; /* MC 59 Feedback */
+PINNODE 660 = ROWB4; /* MC 60 Feedback */
+PINNODE 661 = ROWA4; /* MC 61 Feedback */
+PINNODE 665 = ROWL3; /* MC 65 Feedback */
+PINNODE 666 = ROWJ3; /* MC 66 Feedback */
+PINNODE 667 = ROWH3; /* MC 67 Feedback */
+PINNODE 668 = ROWI3; /* MC 68 Feedback */
+PINNODE 669 = ROWG3; /* MC 69 Feedback */
+PINNODE 670 = ROWE3; /* MC 70 Feedback */
+PINNODE 671 = ROWF3; /* MC 71 Feedback */
+PINNODE 672 = ROWD3; /* MC 72 Feedback */
+PINNODE 673 = ROWC3; /* MC 73 Feedback */
+PINNODE 674 = ROWB3; /* MC 74 Feedback */
+PINNODE 678 = ROWM3; /* MC 78 Feedback */
+PINNODE 679 = ROWA3; /* MC 79 Feedback */
+PINNODE 680 = ROWK3; /* MC 80 Feedback */
+PINNODE 681 = ROWM5; /* MC 81 Feedback */
+PINNODE 682 = ROWI5; /* MC 82 Feedback */
+PINNODE 683 = ROWK5; /* MC 83 Feedback */
+PINNODE 684 = ROWG5; /* MC 84 Feedback */
+PINNODE 685 = ROWL5; /* MC 85 Feedback */
+PINNODE 686 = ROWE5; /* MC 86 Feedback */
+PINNODE 687 = ROWF5; /* MC 87 Feedback */
+PINNODE 688 = ROWD5; /* MC 88 Feedback */
+PINNODE 689 = ROWJ5; /* MC 89 Feedback */
+PINNODE 690 = ROWC5; /* MC 90 Feedback */
+PINNODE 691 = ROWH5; /* MC 91 Feedback */
+PINNODE 695 = ROWB5; /* MC 95 Feedback */
+PINNODE 696 = ROWA5; /* MC 96 Feedback */
+PINNODE 697 = ROWI6; /* MC 97 Feedback */
+PINNODE 698 = ROWG6; /* MC 98 Feedback */
+PINNODE 699 = ROWE6; /* MC 99 Feedback */
+PINNODE 700 = ROWF6; /* MC 100 Feedback */
+PINNODE 701 = ROWM6; /* MC 101 Feedback */
+PINNODE 702 = ROWK6; /* MC 102 Feedback */
+PINNODE 703 = ROWD6; /* MC 103 Feedback */
+PINNODE 704 = ROWL6; /* MC 104 Feedback */
+PINNODE 705 = ROWJ6; /* MC 105 Feedback */
+PINNODE 706 = ROWC6; /* MC 106 Feedback */
+PINNODE 707 = ROWH6; /* MC 107 Feedback */
+PINNODE 711 = ROWB6; /* MC 111 Feedback */
+PINNODE 712 = ROWA6; /* MC 112 Feedback */
+PINNODE 713 = ROWM7; /* MC 113 Feedback */
+PINNODE 714 = ROWG7; /* MC 114 Feedback */
+PINNODE 715 = ROWK7; /* MC 115 Feedback */
+PINNODE 716 = ROWE7; /* MC 116 Feedback */
+PINNODE 717 = ROWF7; /* MC 117 Feedback */
+PINNODE 718 = ROWD7; /* MC 118 Feedback */
+PINNODE 719 = ROWC7; /* MC 119 Feedback */
+PINNODE 720 = ROWL7; /* MC 120 Feedback */
+PINNODE 721 = ROWJ7; /* MC 121 Feedback */
+PINNODE 722 = ROWB7; /* MC 122 Feedback */
+PINNODE 723 = ROWH7; /* MC 123 Feedback */
+PINNODE 724 = ROWA7; /* MC 124 Feedback */
+PINNODE 725 = ROWI7; /* MC 125 Feedback */
+
+** Resource Usage **
+
+
+DCERP Field = Summary of Allocations.
+|||||
+|||||_Preset [p,-]       ==  p = PT preset, - No Preset.
+||||
+||||__Reset [g,r,-]      ==  g= Global AR, r = PT reset, - No reset.
+|||
+|||___Clock Enable [e,-] ==  e = Product Term, - always enabled, - none.
+||
+||____Clock [c,g,-],     ==  c = Product term, g = Global term, - No Clock.
+|
+|_____Type [C,D,L,T],    ==  Register type C= combin, D=dff, L=latch, T=tff.
+
+For input only = INPUT.
+
+MCell Pin# Oe   PinDrive  DCERP  FBDrive  DCERP  Foldback  CascadeOut     TotPT output_slew
+MC1   2         --               ROWM0    Dc--p  --        --             3     slow
+MC2   0         --               ROWG0    Dc--p  --        --             3     slow
+MC3   1         --               ROWK0    Dc--p  --        --             3     slow
+MC4   0         --               ROWE0    Dc--p  --        --             3     slow
+MC5   100       --               ROWL0    Dc--p  --        --             3     slow
+MC6   99        --               ROWJ0    Dc--p  --        --             3     slow
+MC7   0         --               ROWF0    Dc--p  --        --             3     slow
+MC8   98        --               ROWH0    Dc--p  --        --             3     slow
+MC9   97        --               ROWI0    Dc--p  --        --             3     slow
+MC10  0         --               ROWD0    Dc--p  --        --             3     slow
+MC11  96   --   Y_adr8    INPUT  ROWC0    Dc--p  --        --             3     slow
+MC12  0         --               ROWB0    Dc--p  --        --             3     slow
+MC13  94   --   Y_adr7    INPUT  ROWA0    Dc--p  --        --             3     slow
+MC14  93        --               --              --        -> D7          5     slow
+MC15  0         --               --              --        -> D7          5     slow
+MC16  92   on   D7        C----  --              NA        --             3     slow
+MC17  14        --               --              --        -> D6          5     slow
+MC18  0         --               --              --        -> D6          5     slow
+MC19  13   on   D6        C----  --              NA        --             3     slow
+MC20  0         --               ROWI1    Dc--p  --        --             3     slow
+MC21  12        --               ROWM1    Dc--p  --        --             3     slow
+MC22  10        --               ROWK1    Dc--p  --        --             3     slow
+MC23  0         --               ROWG1    Dc--p  --        --             3     slow
+MC24  9         --               ROWL1    Dc--p  --        --             3     slow
+MC25  8         --               ROWJ1    Dc--p  --        --             3     slow
+MC26  0         --               ROWE1    Dc--p  --        --             3     slow
+MC27  7    --   Y_adrA    INPUT  ROWF1    Dc--p  --        --             3     slow
+MC28  0         --               ROWD1    Dc--p  --        --             3     slow
+MC29  6    --   Y_adr9    INPUT  ROWC1    Dc--p  --        --             3     slow
+MC30  5         --               ROWH1    Dc--p  --        --             3     slow
+MC31  0         --               ROWB1    Dc--p  --        --             3     slow
+MC32  4    --   TDI       INPUT  ROWA1    Dc--p  --        --             3     slow
+MC33  25        --               ROWM2    Dc--p  --        --             3     slow
+MC34  0         --               ROWI2    Dc--p  --        --             3     slow
+MC35  24        --               ROWK2    Dc--p  --        --             3     slow
+MC36  0         --               ROWG2    Dc--p  --        --             3     slow
+MC37  23        --               ROWL2    Dc--p  --        --             3     slow
+MC38  22        --               ROWJ2    Dc--p  --        --             3     slow
+MC39  0         --               ROWE2    Dc--p  --        --             3     slow
+MC40  21        --               ROWH2    Dc--p  --        --             3     slow
+MC41  20   --   Y_adrC    INPUT  ROWF2    Dc--p  --        --             3     slow
+MC42  0         --               ROWD2    Dc--p  --        --             3     slow
+MC43  19   --   Y_adrB    INPUT  ROWC2    Dc--p  --        --             3     slow
+MC44  0         --               --              --        -> D3          5     slow
+MC45  17        --               --              --        -> D3          5     slow
+MC46  16   on   D3        C----  --              NA        --             3     slow
+MC47  0         --               ROWB2    Dc--p  --        --             3     slow
+MC48  15   --   TMS       INPUT  ROWA2    Dc--p  --        --             3     slow
+MC49  37   --   X_adr1    INPUT  ROWL4    Dc--p  --        --             3     slow
+MC50  0         --               ROWJ4    Dc--p  --        --             3     slow
+MC51  36   --   X_adr0    INPUT  ROWH4    Dc--p  --        --             3     slow
+MC52  0         --               ROWI4    Dc--p  --        --             3     slow
+MC53  35        --               ROWM4    Dc--p  --        --             3     slow
+MC54  33        --               ROWK4    Dc--p  --        --             3     slow
+MC55  0         --               ROWG4    Dc--p  --        --             3     slow
+MC56  32   --   Y_adr6    INPUT  ROWE4    Dc--p  --        --             3     slow
+MC57  31   --   X3        INPUT  ROWF4    Dc--p  --        --             3     slow
+MC58  0         --               ROWD4    Dc--p  --        --             3     slow
+MC59  30   --   X2        INPUT  ROWC4    Dc--p  --        --             3     slow
+MC60  0         --               ROWB4    Dc--p  --        --             3     slow
+MC61  29   --   X1        INPUT  ROWA4    Dc--p  --        --             3     slow
+MC62  28   --   X0        INPUT  --              --        -> D2          5     slow
+MC63  0         --               --              --        -> D2          5     slow
+MC64  27   on   D2        C----  --              NA        --             3     slow
+MC65  40   --   X_adr2    INPUT  ROWL3    Dc--p  --        --             3     slow
+MC66  0         --               ROWJ3    Dc--p  --        --             3     slow
+MC67  41   --   X_adr3    INPUT  ROWH3    Dc--p  --        --             3     slow
+MC68  0         --               ROWI3    Dc--p  --        --             3     slow
+MC69  42   --   X4        INPUT  ROWG3    Dc--p  --        --             3     slow
+MC70  44   --   X5        INPUT  ROWE3    Dc--p  --        --             3     slow
+MC71  0         --               ROWF3    Dc--p  --        --             3     slow
+MC72  45   --   X6        INPUT  ROWD3    Dc--p  --        --             3     slow
+MC73  46   --   X7        INPUT  ROWC3    Dc--p  --        --             3     slow
+MC74  0         --               ROWB3    Dc--p  --        --             3     slow
+MC75  47   --   XADRCLK   INPUT  --              --        -> D1          5     slow
+MC76  0         --               --              --        -> D1          5     slow
+MC77  48   on   D1        C----  --              NA        --             3     slow
+MC78  49        --               ROWM3    Dc--p  --        --             3     slow
+MC79  0         --               ROWA3    Dc--p  --        --             3     slow
+MC80  50        --               ROWK3    Dc--p  --        --             3     slow
+MC81  52        --               ROWM5    Dc--p  --        --             3     slow
+MC82  0         --               ROWI5    Dc--p  --        --             3     slow
+MC83  53        --               ROWK5    Dc--p  --        --             3     slow
+MC84  0         --               ROWG5    Dc--p  --        --             3     slow
+MC85  54        --               ROWL5    Dc--p  --        --             3     slow
+MC86  55   --   Y_adr0    INPUT  ROWE5    Dc--p  --        --             3     slow
+MC87  0         --               ROWF5    Dc--p  --        --             3     slow
+MC88  56   --   Y_adr1    INPUT  ROWD5    Dc--p  --        --             3     slow
+MC89  57        --               ROWJ5    Dc--p  --        --             3     slow
+MC90  0         --               ROWC5    Dc--p  --        --             3     slow
+MC91  58        --               ROWH5    Dc--p  --        --             3     slow
+MC92  0         --               --              --        -> D0          5     slow
+MC93  60        --               --              --        -> D0          5     slow
+MC94  61   on   D0        C----  --              NA        --             3     slow
+MC95  0         --               ROWB5    Dc--p  --        --             3     slow
+MC96  62   --   TCK       INPUT  ROWA5    Dc--p  --        --             3     slow
+MC97  63   --   Y_adr2    INPUT  ROWI6    Dc--p  --        --             3     slow
+MC98  0         --               ROWG6    Dc--p  --        --             3     slow
+MC99  64   --   Y_adr3    INPUT  ROWE6    Dc--p  --        --             3     slow
+MC100 0         --               ROWF6    Dc--p  --        --             3     slow
+MC101 65        --               ROWM6    Dc--p  --        --             3     slow
+MC102 67        --               ROWK6    Dc--p  --        --             3     slow
+MC103 0         --               ROWD6    Dc--p  --        --             3     slow
+MC104 68        --               ROWL6    Dc--p  --        --             3     slow
+MC105 69        --               ROWJ6    Dc--p  --        --             3     slow
+MC106 0         --               ROWC6    Dc--p  --        --             3     slow
+MC107 70        --               ROWH6    Dc--p  --        --             3     slow
+MC108 0         --               --              --        -> D5          5     slow
+MC109 71        --               --              --        -> D5          5     slow
+MC110 72   on   D5        C----  --              NA        --             3     slow
+MC111 0         --               ROWB6    Dc--p  --        --             3     slow
+MC112 73   --   TDO       INPUT  ROWA6    Dc--p  --        --             3     slow
+MC113 75        --               ROWM7    Dc--p  --        --             3     slow
+MC114 0         --               ROWG7    Dc--p  --        --             3     slow
+MC115 76        --               ROWK7    Dc--p  --        --             3     slow
+MC116 0         --               ROWE7    Dc--p  --        --             3     slow
+MC117 77   --   Y_adr4    INPUT  ROWF7    Dc--p  --        --             3     slow
+MC118 78   --   Y_adr5    INPUT  ROWD7    Dc--p  --        --             3     slow
+MC119 0         --               ROWC7    Dc--p  --        --             3     slow
+MC120 79        --               ROWL7    Dc--p  --        --             3     slow
+MC121 80        --               ROWJ7    Dc--p  --        --             3     slow
+MC122 0         --               ROWB7    Dc--p  --        --             3     slow
+MC123 81        --               ROWH7    Dc--p  --        --             3     slow
+MC124 0         --               ROWA7    Dc--p  --        --             3     slow
+MC125 83        --               ROWI7    Dc--p  --        --             3     slow
+MC126 84        --               --              --        -> D4          5     slow
+MC127 0         --               --              --        -> D4          5     slow
+MC128 85   on   D4        C----  --              NA        --             3     slow
+MC0   90        --               --              --        --             0     slow
+MC0   89        RESET     INPUT  --              --        --             0     slow
+MC0   88        --               --              --        --             0     slow
+MC0   87        --               --              --        --             0     slow
+
+Logic Array Block	Logic Cells	I/O Pins	Foldbacks	TotalPT		FanIN	Cascades
+A: LC1	- LC16		14/16(87%)	3/16(18%)	0/16(0%)	52/80(65%)	(33)	2
+B: LC17	- LC32		14/16(87%)	4/16(25%)	0/16(0%)	52/80(65%)	(33)	2
+C: LC33	- LC48		14/16(87%)	4/16(25%)	0/16(0%)	52/80(65%)	(33)	2
+D: LC49	- LC64		14/16(87%)	8/16(50%)	0/16(0%)	52/80(65%)	(33)	2
+E: LC65	- LC80		14/16(87%)	8/16(50%)	0/16(0%)	52/80(65%)	(33)	2
+F: LC81	- LC96		14/16(87%)	4/16(25%)	0/16(0%)	52/80(65%)	(33)	2
+G: LC97	- LC112		14/16(87%)	4/16(25%)	0/16(0%)	52/80(65%)	(33)	2
+H: LC113- LC128		14/16(87%)	3/16(18%)	0/16(0%)	52/80(65%)	(33)	2
+
+Total dedicated input used:	1/4 	(25%)
+Total I/O pins used		38/80 	(47%)
+Total Logic cells used 		128/128 	(100%)
+Total Flip-Flop used 		104/128 	(81%)
+Total Foldback logic used 	0/128 	(0%)
+Total Nodes+FB/MCells 		112/128 	(87%)
+Total cascade used 		16
+Total input pins 		31
+Total output pins 		8
+Total Pts 			416
+Creating pla file C:\USERS\BERT_\DOCUMENTS\03_MSX\MSX_KEYBOARD_INBOUW\MSX_KEYBOARD_V5\CPLD\MSX1KBDV5.tt3 with 0 inputs 0 outputs, 0 pins 0 nodes and 0 pterms...
+
+----------------  End fitter, Design FITS
+$Device TQFP100 fits 
+FIT1508 completed in 0.00 seconds
