@@ -1,7 +1,7 @@
-Atmel ATF1508AS Fitter Version 1.8.7.8 ,running Tue Mar 15 12:47:00 2022
+Atmel ATF1508AS Fitter Version 1.8.7.8 ,running Wed Jul 31 12:18:00 2024
 
 
-fit1508 C:\USERS\BERT_\DOCUMENTS\03_MSX\MSX_KEYBOARD_INBOUW\MSX_KEYBOARD_V5\CPLD\MSX1KBDV5.tt2 -CUPL -dev P1508T100 -JTAG ON
+fit1508 C:\WINCUPL\WINCUPL\MSX1KBDV5.tt2 -CUPL -dev P1508T100 -JTAG ON
 
 
 ****** Initial fitting strategy and property ******
@@ -56,7 +56,7 @@ fit1508 C:\USERS\BERT_\DOCUMENTS\03_MSX\MSX_KEYBOARD_INBOUW\MSX_KEYBOARD_V5\CPLD
 ---------------------------------------------------------
  Fitter_Pass 2, Preassign = KEEP, NODE ASSIGN : OFF 
  ... 
-Info: C:\USERS\BERT_\DOCUMENTS\03_MSX\MSX_KEYBOARD_INBOUW\MSX_KEYBOARD_V5\CPLD\MSX1KBDV5 uses 90% of the logic resources in device TQFP100
+Info: C:\WINCUPL\WINCUPL\MSX1KBDV5 uses 90% of the logic resources in device TQFP100
   If you wish to have more pins available for future logic change
   Atmel recommends using a larger device.
 
@@ -610,7 +610,7 @@ ROWF4			(MC9	FB)  : MUX 37		Ref (D57fb)
 ROWG4			(MC7	FB)  : MUX 38		Ref (D55fb)
 ROWD4			(MC10	FB)  : MUX 39		Ref (D58fb)
 
-Creating JEDEC file C:\USERS\BERT_\DOCUMENTS\03_MSX\MSX_KEYBOARD_INBOUW\MSX_KEYBOARD_V5\CPLD\MSX1KBDV5.jed ...
+Creating JEDEC file C:\WINCUPL\WINCUPL\MSX1KBDV5.jed ...
 
 TQFP100 programmed logic:
 -----------------------------------
@@ -1668,7 +1668,7 @@ Total cascade used 		16
 Total input pins 		31
 Total output pins 		8
 Total Pts 			416
-Creating pla file C:\USERS\BERT_\DOCUMENTS\03_MSX\MSX_KEYBOARD_INBOUW\MSX_KEYBOARD_V5\CPLD\MSX1KBDV5.tt3 with 0 inputs 0 outputs, 0 pins 0 nodes and 0 pterms...
+Creating pla file C:\WINCUPL\WINCUPL\MSX1KBDV5.tt3 with 0 inputs 0 outputs, 0 pins 0 nodes and 0 pterms...
 
 ----------------  End fitter, Design FITS
 $Device TQFP100 fits 
