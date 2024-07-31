@@ -111,7 +111,7 @@ NODE [ROWM7..ROWM0];
 [ROWA7..ROWA0].CK =(!X_adr3 & !X_adr2 & !X_adr1 & !X_adr0 & XADRCLK);
 [ROWB7..ROWB0].CK =(!X_adr3 & !X_adr2 & !X_adr1 & X_adr0 & XADRCLK);
 [ROWC7..ROWC0].CK =(!X_adr3 & !X_adr2 & X_adr1 & !X_adr0 & XADRCLK);
-[ROWD7..ROWD0].CK =(!X_adr3 & !X_adr2 & X_adr1 & X_adr0) & XADRCLK;
+[ROWD7..ROWD0].CK =(!X_adr3 & !X_adr2 & X_adr1 & X_adr0 & XADRCLK);
 [ROWE7..ROWE0].CK =(!X_adr3 & X_adr2 & !X_adr1 & !X_adr0 & XADRCLK);
 [ROWF7..ROWF0].CK =(!X_adr3 & X_adr2 & !X_adr1 & X_adr0 & XADRCLK);
 [ROWG7..ROWG0].CK =(!X_adr3 & X_adr2 & X_adr1 & !X_adr0 & XADRCLK);
